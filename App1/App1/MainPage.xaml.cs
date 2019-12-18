@@ -1,4 +1,5 @@
 ﻿using App1.Clases;
+using App1.Service;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -14,12 +15,23 @@ namespace App1
     [DesignTimeVisible(false)]
     public partial class MainPage : ContentPage
     {
-
+        WeatherService myService;
         List<Contacto> listaContactos;
         public MainPage()
         {
+            myService = new WeatherService();
+            getClima(myService);
+
             InitializeComponent();
             listaContactos = new List<Contacto>();
+
+            contactosListView.ItemSelected += ContactosListView_ItemSelected;
+        }
+
+        private void ContactosListView_ItemSelected(object sender, SelectedItemChangedEventArgs e)
+        {
+            var contactoSeleccionado = e.SelectedItem as Contacto;
+            Navigation.PushAsync(new DetalleContactoPages(contactoSeleccionado));
         }
 
         protected override void OnAppearing()
@@ -34,22 +46,57 @@ namespace App1
             contactosListView.ItemsSource = listaContactos;
         }
 
+        
+       
+        string GenerateRequestUri(string endpoint)
+        {
+            string requestUri = endpoint;
+            requestUri += $"?q=Pilar";
+            requestUri += "&units=imperial"; // or units=metric
+            requestUri += $"&APPID={ConnectionApiOpenWeather.OpenWeatherMapAPIKey}";
+            return requestUri;
+        }
+
+        private async void getClima(object sender)
+        {
+            WeatherPOJO weatherData = await myService.GetWeatherData(GenerateRequestUri(ConnectionApiOpenWeather.OpenWeatherMapEndpoint));
+            lblTitulo.Text = weatherData.Title;
+            lblTemperatura.Text = weatherData.Main.Temperature.ToString();
+        }
+
+
+
+        #region NoUsados
+
+        private async Task Button_ClickedAsync(object sender, EventArgs e)
+        {
+            if (!string.IsNullOrWhiteSpace("Pilar"))
+            {
+                WeatherPOJO weatherData = await myService.GetWeatherData(GenerateRequestUri(ConnectionApiOpenWeather.OpenWeatherMapEndpoint));
+                BindingContext = weatherData;
+            }
+        }
+
         private void Buton_Enviar(object sender, EventArgs args)
         {
             //string mensajeUsuario = mensajeEntry.Text;
             //DisplayAlert("Error!", $"Hola {mensajeUsuario}", "Aceptar");
         }
 
-        private void Button_Clicked(object sender, EventArgs e)
-        {
-            //string mensaje = usuarioEntry.Text.Equals("junior")
-            //    ? $"Login correcto {usuarioEntry.Text}"
-            //    : $"Error al iniciar: {usuarioEntry.Text}, no existe";
-            //DisplayAlert("Holaa!", mensaje, "Aceptar");
-        }
         private void ToolbarItem_Clicked(object sender, EventArgs e)
         {
             Navigation.PushAsync(new NuevoContactoPage());
+        }
+
+        private void Button_Clicked_1(object sender, EventArgs e)
+        {
+
+        }
+        #endregion
+
+        private void Button_Clicked(object sender, EventArgs e)
+        {
+
         }
     }
 }

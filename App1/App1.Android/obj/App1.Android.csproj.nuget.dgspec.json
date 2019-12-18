@@ -1,24 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "E:\\Mitsuha\\Repositorio\\CDA\\Xamarin-demo\\App1\\App1.Android\\App1.Android.csproj": {}
+    "C:\\Users\\jrhuamani\\source\\repos\\App1\\App1\\App1.Android\\App1.Android.csproj": {}
   },
   "projects": {
-    "E:\\Mitsuha\\Repositorio\\CDA\\Xamarin-demo\\App1\\App1.Android\\App1.Android.csproj": {
+    "C:\\Users\\jrhuamani\\source\\repos\\App1\\App1\\App1.Android\\App1.Android.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\Mitsuha\\Repositorio\\CDA\\Xamarin-demo\\App1\\App1.Android\\App1.Android.csproj",
+        "projectUniqueName": "C:\\Users\\jrhuamani\\source\\repos\\App1\\App1\\App1.Android\\App1.Android.csproj",
         "projectName": "App1.Android",
-        "projectPath": "E:\\Mitsuha\\Repositorio\\CDA\\Xamarin-demo\\App1\\App1.Android\\App1.Android.csproj",
-        "packagesPath": "C:\\Users\\Cina\\.nuget\\packages\\",
-        "outputPath": "E:\\Mitsuha\\Repositorio\\CDA\\Xamarin-demo\\App1\\App1.Android\\obj\\",
+        "projectPath": "C:\\Users\\jrhuamani\\source\\repos\\App1\\App1\\App1.Android\\App1.Android.csproj",
+        "packagesPath": "C:\\Users\\jrhuamani\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\jrhuamani\\source\\repos\\App1\\App1\\App1.Android\\obj\\",
         "projectStyle": "PackageReference",
         "skipContentFileWrite": true,
         "fallbackFolders": [
-          "E:\\Microsoft\\Xamarin\\NuGet\\"
+          "C:\\Microsoft\\Xamarin\\NuGet\\"
         ],
         "configFilePaths": [
-          "C:\\Users\\Cina\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\jrhuamani\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
@@ -32,8 +32,8 @@
         "frameworks": {
           "monoandroid90": {
             "projectReferences": {
-              "E:\\Mitsuha\\Repositorio\\CDA\\Xamarin-demo\\App1\\App1\\App1.csproj": {
-                "projectPath": "E:\\Mitsuha\\Repositorio\\CDA\\Xamarin-demo\\App1\\App1\\App1.csproj"
+              "C:\\Users\\jrhuamani\\source\\repos\\App1\\App1\\App1\\App1.csproj": {
+                "projectPath": "C:\\Users\\jrhuamani\\source\\repos\\App1\\App1\\App1\\App1.csproj"
               }
             }
           }
@@ -58,20 +58,20 @@
         }
       }
     },
-    "E:\\Mitsuha\\Repositorio\\CDA\\Xamarin-demo\\App1\\App1\\App1.csproj": {
+    "C:\\Users\\jrhuamani\\source\\repos\\App1\\App1\\App1\\App1.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\Mitsuha\\Repositorio\\CDA\\Xamarin-demo\\App1\\App1\\App1.csproj",
+        "projectUniqueName": "C:\\Users\\jrhuamani\\source\\repos\\App1\\App1\\App1\\App1.csproj",
         "projectName": "App1",
-        "projectPath": "E:\\Mitsuha\\Repositorio\\CDA\\Xamarin-demo\\App1\\App1\\App1.csproj",
-        "packagesPath": "C:\\Users\\Cina\\.nuget\\packages\\",
-        "outputPath": "E:\\Mitsuha\\Repositorio\\CDA\\Xamarin-demo\\App1\\App1\\obj\\",
+        "projectPath": "C:\\Users\\jrhuamani\\source\\repos\\App1\\App1\\App1\\App1.csproj",
+        "packagesPath": "C:\\Users\\jrhuamani\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\jrhuamani\\source\\repos\\App1\\App1\\App1\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "E:\\Microsoft\\Xamarin\\NuGet\\"
+          "C:\\Microsoft\\Xamarin\\NuGet\\"
         ],
         "configFilePaths": [
-          "C:\\Users\\Cina\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\jrhuamani\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
@@ -101,6 +101,10 @@
               "target": "Package",
               "version": "[2.0.3, )",
               "autoReferenced": true
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[12.0.3, )"
             },
             "Xamarin.Essentials": {
               "target": "Package",

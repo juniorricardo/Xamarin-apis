@@ -5,33 +5,41 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
              x:Class="App1.MainPage"
-             BackgroundColor="#2f2b32">
+             BackgroundColor="{StaticResource colorFondo}">
 
     <ContentPage.ToolbarItems>
         <ToolbarItem Text="Agregar"
                      Clicked="ToolbarItem_Clicked"/>
     </ContentPage.ToolbarItems>
 
-    <ListView x:Name="contactosListView">
-        <ListView.ItemTemplate>
-            <DataTemplate>
-                <TextCell   Text="{Binding Nombre}"
-                            Detail="{Binding Apellido}"/>
-            </DataTemplate>
-        </ListView.ItemTemplate>
-    </ListView>
-    <!--<Grid>
+    <Grid>
+        <Grid>
+            <ListView x:Name="contactosListView">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <TextCell   Text="{Binding Nombre}"
+                                    Detail="{Binding Apellido}"
+                                    TextColor="#D9C5AD"/>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </Grid>
+
+        <Grid>
             <StackLayout Margin="40" Padding="10" 
                          BackgroundColor="#f4f4f2"
                          VerticalOptions="Center">
-                <Label  Text="Ingrese su usuario"
+                <Label  Text="Consultar clima"
                         HorizontalOptions="Center"/>
-                <Entry  x:Name="usuarioEntry"
-                        Placeholder="Nombre de usuario"
+                <Entry  x:Name="climaEntry"
+                        Placeholder="Ingrese la ubicacion"
                         HorizontalTextAlignment="Center"/>
                 <Button Clicked="Button_Clicked"
-                        Text="Validar" />
+                        Text="Buscar clima" />
+                <Label x:Name="lblTitulo"/>
+                <Label x:Name="lblTemperatura"/>
             </StackLayout>
-        </Grid>-->
+        </Grid>
+    </Grid>
 
 </ContentPage>

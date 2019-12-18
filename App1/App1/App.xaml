@@ -10,6 +10,7 @@
         <ResourceDictionary>
             <Color x:Key="colorPrincipal">#1E90FF</Color>
             <Color x:Key="colorSegundario">#00FF00</Color>
+            <Color x:Key="colorFondo">#152026</Color>
 
             <Style TargetType="Entry">
                 <Setter Property="TextColor" Value="{StaticResource colorPrincipal}"/>
