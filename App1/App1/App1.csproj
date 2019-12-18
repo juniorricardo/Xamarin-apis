@@ -11,20 +11,25 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="Controller\**" />
+    <Compile Remove="Model\**" />
+    <EmbeddedResource Remove="Controller\**" />
+    <EmbeddedResource Remove="Model\**" />
+    <None Remove="Controller\**" />
+    <None Remove="Model\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="sqlite-net-pcl" Version="1.6.292" />
     <PackageReference Include="Xamarin.Forms" Version="4.3.0.908675" />
     <PackageReference Include="Xamarin.Essentials" Version="1.3.1" />
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Controller\" />
-    <Folder Include="Model\" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <EmbeddedResource Update="View\DetalleContactoPages.xaml">
+    <EmbeddedResource Update="DetalleContactoPages.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Update="View\NuevoContactoPage.xaml">
+    <EmbeddedResource Update="NuevoContactoPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
   </ItemGroup>

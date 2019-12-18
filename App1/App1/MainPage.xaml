@@ -4,29 +4,34 @@
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
-             xmlns:pages="App1.Views"
              x:Class="App1.MainPage"
              BackgroundColor="#2f2b32">
 
-    <!--ListView x:Name="contactosListView">
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="Agregar"
+                     Clicked="ToolbarItem_Clicked"/>
+    </ContentPage.ToolbarItems>
+
+    <ListView x:Name="contactosListView">
         <ListView.ItemTemplate>
             <DataTemplate>
-                <TextCell Text=""
-                          Detail=""/>
+                <TextCell   Text="{Binding Nombre}"
+                            Detail="{Binding Apellido}"/>
             </DataTemplate>
         </ListView.ItemTemplate>
-    </-->
-
-    <StackLayout Margin="40" Padding="10" 
-                 BackgroundColor="#f4f4f2"
-                 VerticalOptions="Center">
-        <Label Text="Ingrese su usuario"
-               HorizontalOptions="Center"/>
-        <Entry x:Name="usuarioEntry"
-               Placeholder="Nombre de usuario"
-               HorizontalTextAlignment="Center"/>
-        <Button Clicked="Button_Clicked"
-                Text="Validar" />
-    </StackLayout>
+    </ListView>
+    <!--<Grid>
+            <StackLayout Margin="40" Padding="10" 
+                         BackgroundColor="#f4f4f2"
+                         VerticalOptions="Center">
+                <Label  Text="Ingrese su usuario"
+                        HorizontalOptions="Center"/>
+                <Entry  x:Name="usuarioEntry"
+                        Placeholder="Nombre de usuario"
+                        HorizontalTextAlignment="Center"/>
+                <Button Clicked="Button_Clicked"
+                        Text="Validar" />
+            </StackLayout>
+        </Grid>-->
 
 </ContentPage>

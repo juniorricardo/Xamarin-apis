@@ -1,6 +1,3 @@
-App1.Droid.MainActivity, App1.Android;crc64ad68f59cd763e462.MainActivity
-App1.Droid.MainActivity;crc64ad68f59cd763e462.MainActivity
-app1.droid.MainActivity;crc64ad68f59cd763e462.MainActivity
 Android.Support.V4.View.AsyncLayoutInflater+IOnInflateFinishedListenerImplementor, Xamarin.Android.Support.AsyncLayoutInflater;mono.android.support.v4.view.AsyncLayoutInflater_OnInflateFinishedListenerImplementor
 Android.Support.V4.View.AsyncLayoutInflater.IOnInflateFinishedListenerImplementor;mono.android.support.v4.view.AsyncLayoutInflater_OnInflateFinishedListenerImplementor
 mono.android.support.v4.view.AsyncLayoutInflater_OnInflateFinishedListenerImplementor;mono.android.support.v4.view.AsyncLayoutInflater_OnInflateFinishedListenerImplementor
