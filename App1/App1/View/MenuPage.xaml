@@ -6,15 +6,22 @@
              mc:Ignorable="d"
              x:Class="AppDemo.View.MenuPage"
              Title="Menu">
-    
+
     <StackLayout VerticalOptions="FillAndExpand">
         <ListView x:Name="ListViewMenu"
-                    HasUnevenRows="True">
+                    HasUnevenRows="True"
+                    RowHeight="60">
             <ListView.Header>
-                <Label x:Name="lblClima" 
-                            Text="clima"/>
+                <StackLayout Padding="10,5,0,5">
+                    <Image Source="dog-01.jpg" />
+                    <Label x:Name="lblClima" 
+                       Text="clima"
+                       Padding="50"
+                       HorizontalTextAlignment="Center" />
+                    
+                </StackLayout>
             </ListView.Header>
-            
+
             <d:ListView.ItemsSource>
                 <x:Array Type="{x:Type x:String}">
                     <x:String>Item 1</x:String>
@@ -25,7 +32,9 @@
             <ListView.ItemTemplate>
                 <DataTemplate>
                     <ViewCell>
-                        <Grid Padding="10">
+                        <Grid Padding="10"
+                              VerticalOptions="FillAndExpand"
+                               HorizontalOptions="Center">
                             <Label Text="{Binding Title}" 
                                    d:Text="{Binding .}" 
                                    FontSize="20"/>
@@ -33,6 +42,7 @@
                     </ViewCell>
                 </DataTemplate>
             </ListView.ItemTemplate>
+
         </ListView>
     </StackLayout>
 </ContentPage>

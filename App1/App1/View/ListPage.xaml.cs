@@ -31,7 +31,7 @@ namespace AppDemo.View
                 conn.CreateTable<Contacto>();
                 listaContactos = conn.Table<Contacto>().ToList();
             }
-            //contactosListView.ItemsSource = listaContactos;
+            contactosListView.ItemsSource = listaContactos;
         }
 
         private void ContactosListView_ItemSelected(object sender, SelectedItemChangedEventArgs e)

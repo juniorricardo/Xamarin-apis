@@ -6,10 +6,24 @@
              mc:Ignorable="d"
              x:Class="AppDemo.View.NewsPage">
     <ContentPage.Content>
-        <StackLayout>
-            <Label Text="News!Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dignissimos libero eius quidem reiciendis."
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+        <StackLayout Padding="20"
+                     HorizontalOptions="CenterAndExpand"
+                     BackgroundColor="{StaticResource colorFondo}">
+            <Frame>
+                <Label Text="News!Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dignissimos libero eius quidem reiciendis." />
+            </Frame>
+            <Frame>
+                <Label Text="News!Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dignissimos libero eius quidem reiciendis." />
+            </Frame>
+            <Frame>
+                <Label Text="News!Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dignissimos libero eius quidem reiciendis." />
+            </Frame>
+            <Frame>
+                <Label Text="News!Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dignissimos libero eius quidem reiciendis." />
+            </Frame>
+            <Frame>
+                <Label Text="News!Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dignissimos libero eius quidem reiciendis." />
+            </Frame>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

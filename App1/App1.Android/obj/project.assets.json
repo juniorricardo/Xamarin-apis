@@ -2148,24 +2148,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Cina\\.nuget\\packages\\": {},
-    "E:\\Microsoft\\Xamarin\\NuGet\\": {}
+    "C:\\Users\\jrhuamani\\.nuget\\packages\\": {},
+    "C:\\Microsoft\\Xamarin\\NuGet\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\Mitsuha\\Repositorio\\CDA\\Xamarin-demo\\App1\\App1.Android\\AppDemo.Android.csproj",
+      "projectUniqueName": "C:\\Users\\jrhuamani\\source\\repos\\App1\\App1\\App1.Android\\AppDemo.Android.csproj",
       "projectName": "AppDemo.Android",
-      "projectPath": "E:\\Mitsuha\\Repositorio\\CDA\\Xamarin-demo\\App1\\App1.Android\\AppDemo.Android.csproj",
-      "packagesPath": "C:\\Users\\Cina\\.nuget\\packages\\",
-      "outputPath": "E:\\Mitsuha\\Repositorio\\CDA\\Xamarin-demo\\App1\\App1.Android\\obj\\",
+      "projectPath": "C:\\Users\\jrhuamani\\source\\repos\\App1\\App1\\App1.Android\\AppDemo.Android.csproj",
+      "packagesPath": "C:\\Users\\jrhuamani\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\jrhuamani\\source\\repos\\App1\\App1\\App1.Android\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "fallbackFolders": [
-        "E:\\Microsoft\\Xamarin\\NuGet\\"
+        "C:\\Microsoft\\Xamarin\\NuGet\\"
       ],
       "configFilePaths": [
-        "C:\\Users\\Cina\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\jrhuamani\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
       ],
@@ -2179,8 +2179,8 @@
       "frameworks": {
         "monoandroid90": {
           "projectReferences": {
-            "E:\\Mitsuha\\Repositorio\\CDA\\Xamarin-demo\\App1\\App1\\AppDemo.csproj": {
-              "projectPath": "E:\\Mitsuha\\Repositorio\\CDA\\Xamarin-demo\\App1\\App1\\AppDemo.csproj"
+            "C:\\Users\\jrhuamani\\source\\repos\\App1\\App1\\App1\\AppDemo.csproj": {
+              "projectPath": "C:\\Users\\jrhuamani\\source\\repos\\App1\\App1\\App1\\AppDemo.csproj"
             }
           }
         }

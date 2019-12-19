@@ -12,6 +12,7 @@
             <Color x:Key="colorSegundario">#00FF00</Color>
             <Color x:Key="colorFondo">#152026</Color>
 
+
             <Style TargetType="Entry">
                 <Setter Property="TextColor" Value="{StaticResource colorPrincipal}"/>
                 <Setter Property="FontFamily" Value="Arial"/>
@@ -23,6 +24,10 @@
                 <Setter Property="TextColor" Value="{StaticResource colorSegundario}"/>
                 <Setter Property="FontFamily" Value="Century"/>
                 <Setter Property="FontAttributes" Value="None"/>
+            </Style>
+            <Style TargetType="Frame" >
+                <Setter Property="CornerRadius" Value="10"/>
+                <Setter Property="HasShadow" Value="true"/>
             </Style>
 
         </ResourceDictionary>

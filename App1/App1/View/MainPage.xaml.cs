@@ -26,36 +26,12 @@ namespace AppDemo.View
 
             MasterBehavior = MasterBehavior.Popover;
 
-            MenuPages.Add((int)MenuItemType.Lista, (NavigationPage)Detail);
+            Detail = new NavigationPage((Page)Activator.CreateInstance(typeof(ItemsPage)));
+            //MenuPages.Add((int)MenuItemType.Lista, (NavigationPage)Detail);
             
         }
-        public async Task NavigateFromMenu(int id)
-        {
-            if (!MenuPages.ContainsKey(id))
-            {
-                switch (id)
-                {
-                    case (int)MenuItemType.Lista:
-                        MenuPages.Add(id, new NavigationPage(new ListPage()));
-                        break;
-                    case (int)MenuItemType.Noticias:
-                        MenuPages.Add(id, new NavigationPage(new NewsPage()));
-                        break;
-                }
-            }
+        
 
-            var newPage = MenuPages[id];
-
-            if (newPage != null && Detail != newPage)
-            {
-                Detail = newPage;
-
-                if (Device.RuntimePlatform == Device.Android)
-                    await Task.Delay(100);
-
-                IsPresented = false;
-            }
-        }
 
 
         #region PorImplementar

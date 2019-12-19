@@ -10,7 +10,6 @@ namespace AppDemo
         public App()
         {
             InitializeComponent();
-
             MainPage = new MainPage();
         }
 
@@ -19,7 +18,14 @@ namespace AppDemo
         {
             InitializeComponent();
 
-            MainPage = new NavigationPage(new MainPage());
+            var navPage = new NavigationPage(new ItemsPage()) { Title = "Home" };
+            var mdp = new MasterDetailPage()
+            {
+                Master = new MenuPage(),
+                Detail = navPage
+            };
+            MainPage = mdp;
+            //MainPage = new NavigationPage(new MainPage());
 
             RUTA_DB = ruta_db;
         }
