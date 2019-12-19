@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29609.76
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "App1.Android", "App1\App1.Android\App1.Android.csproj", "{001D5E1D-1D17-475D-85D2-BEF3FE7D230B}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AppDemo.Android", "App1\App1.Android\AppDemo.Android.csproj", "{001D5E1D-1D17-475D-85D2-BEF3FE7D230B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "App1", "App1\App1\App1.csproj", "{E203DCF9-9C97-47A5-BBE4-8B4714D66BFA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AppDemo", "App1\App1\AppDemo.csproj", "{E203DCF9-9C97-47A5-BBE4-8B4714D66BFA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

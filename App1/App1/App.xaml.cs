@@ -1,8 +1,9 @@
-﻿using System;
+﻿using AppDemo.View;
+using System;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
-namespace App1
+namespace AppDemo
 {
     public partial class App : Application
     {

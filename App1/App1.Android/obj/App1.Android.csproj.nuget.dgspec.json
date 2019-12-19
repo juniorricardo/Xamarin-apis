@@ -1,24 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\jrhuamani\\source\\repos\\App1\\App1\\App1.Android\\App1.Android.csproj": {}
+    "E:\\Mitsuha\\Repositorio\\CDA\\Xamarin-demo\\App1\\App1.Android\\App1.Android.csproj": {}
   },
   "projects": {
-    "C:\\Users\\jrhuamani\\source\\repos\\App1\\App1\\App1.Android\\App1.Android.csproj": {
+    "E:\\Mitsuha\\Repositorio\\CDA\\Xamarin-demo\\App1\\App1.Android\\App1.Android.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\jrhuamani\\source\\repos\\App1\\App1\\App1.Android\\App1.Android.csproj",
+        "projectUniqueName": "E:\\Mitsuha\\Repositorio\\CDA\\Xamarin-demo\\App1\\App1.Android\\App1.Android.csproj",
         "projectName": "App1.Android",
-        "projectPath": "C:\\Users\\jrhuamani\\source\\repos\\App1\\App1\\App1.Android\\App1.Android.csproj",
-        "packagesPath": "C:\\Users\\jrhuamani\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\jrhuamani\\source\\repos\\App1\\App1\\App1.Android\\obj\\",
+        "projectPath": "E:\\Mitsuha\\Repositorio\\CDA\\Xamarin-demo\\App1\\App1.Android\\App1.Android.csproj",
+        "packagesPath": "C:\\Users\\Cina\\.nuget\\packages\\",
+        "outputPath": "E:\\Mitsuha\\Repositorio\\CDA\\Xamarin-demo\\App1\\App1.Android\\obj\\",
         "projectStyle": "PackageReference",
         "skipContentFileWrite": true,
         "fallbackFolders": [
-          "C:\\Microsoft\\Xamarin\\NuGet\\"
+          "E:\\Microsoft\\Xamarin\\NuGet\\"
         ],
         "configFilePaths": [
-          "C:\\Users\\jrhuamani\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Cina\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
@@ -32,8 +32,8 @@
         "frameworks": {
           "monoandroid90": {
             "projectReferences": {
-              "C:\\Users\\jrhuamani\\source\\repos\\App1\\App1\\App1\\App1.csproj": {
-                "projectPath": "C:\\Users\\jrhuamani\\source\\repos\\App1\\App1\\App1\\App1.csproj"
+              "E:\\Mitsuha\\Repositorio\\CDA\\Xamarin-demo\\App1\\App1\\AppDemo.csproj": {
+                "projectPath": "E:\\Mitsuha\\Repositorio\\CDA\\Xamarin-demo\\App1\\App1\\AppDemo.csproj"
               }
             }
           }
@@ -58,20 +58,20 @@
         }
       }
     },
-    "C:\\Users\\jrhuamani\\source\\repos\\App1\\App1\\App1\\App1.csproj": {
+    "E:\\Mitsuha\\Repositorio\\CDA\\Xamarin-demo\\App1\\App1\\AppDemo.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\jrhuamani\\source\\repos\\App1\\App1\\App1\\App1.csproj",
-        "projectName": "App1",
-        "projectPath": "C:\\Users\\jrhuamani\\source\\repos\\App1\\App1\\App1\\App1.csproj",
-        "packagesPath": "C:\\Users\\jrhuamani\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\jrhuamani\\source\\repos\\App1\\App1\\App1\\obj\\",
+        "projectUniqueName": "E:\\Mitsuha\\Repositorio\\CDA\\Xamarin-demo\\App1\\App1\\AppDemo.csproj",
+        "projectName": "AppDemo",
+        "projectPath": "E:\\Mitsuha\\Repositorio\\CDA\\Xamarin-demo\\App1\\App1\\AppDemo.csproj",
+        "packagesPath": "C:\\Users\\Cina\\.nuget\\packages\\",
+        "outputPath": "E:\\Mitsuha\\Repositorio\\CDA\\Xamarin-demo\\App1\\App1\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Microsoft\\Xamarin\\NuGet\\"
+          "E:\\Microsoft\\Xamarin\\NuGet\\"
         ],
         "configFilePaths": [
-          "C:\\Users\\jrhuamani\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Cina\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],

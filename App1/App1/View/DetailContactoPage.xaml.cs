@@ -1,5 +1,4 @@
-﻿using App1.Clases;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -7,14 +6,20 @@ using System.Threading.Tasks;
 
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
+using AppDemo.Entities;
 
-namespace App1
+namespace AppDemo.View
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class DetalleContactoPages : ContentPage
+    public partial class DetailContactoPage : ContentPage
     {
+        public DetailContactoPage()
+        {
+            InitializeComponent();
+        }
+
         public Contacto Contacto { get; set; }
-        public DetalleContactoPages(Contacto contacto)
+        public DetailContactoPage(Contacto contacto)
         {
             InitializeComponent();
 

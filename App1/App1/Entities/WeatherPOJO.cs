@@ -3,7 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace App1.Clases
+namespace AppDemo.Entities
 {
     public class WeatherPOJO
     {

@@ -4,10 +4,10 @@ using System.Diagnostics;
 using System.Net.Http;
 using System.Text;
 using System.Threading.Tasks;
-using App1.Clases;
+using AppDemo.Entities;
 using Newtonsoft.Json;
 
-namespace App1.Service
+namespace AppDemo.Service
 {
     public class WeatherService
     {
