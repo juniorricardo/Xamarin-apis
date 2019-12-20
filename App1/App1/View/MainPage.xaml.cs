@@ -16,7 +16,7 @@ namespace AppDemo.View
     // Learn more about making custom code visible in the Xamarin.Forms previewer
     // by visiting https://aka.ms/xamarinforms-previewer
     [DesignTimeVisible(false)]
-    public partial class MainPage : MasterDetailPage
+    public partial class MainPage : ContentPage
     {
 
         //Dictionary<int, NavigationPage> MenuPages = new Dictionary<int, NavigationPage>();
@@ -24,14 +24,12 @@ namespace AppDemo.View
         {
             InitializeComponent();
 
-            MasterBehavior = MasterBehavior.Popover;
+            //MasterBehavior = MasterBehavior.Popover;
 
-            Detail = new NavigationPage((Page)Activator.CreateInstance(typeof(ItemsPage)));
+            //Detail = new NavigationPage((Page)Activator.CreateInstance(typeof(ItemsPage)));
             //MenuPages.Add((int)MenuItemType.Lista, (NavigationPage)Detail);
             
         }
-        
-
 
 
         #region PorImplementar

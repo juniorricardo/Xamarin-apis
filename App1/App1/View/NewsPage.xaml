@@ -7,14 +7,11 @@
              x:Class="AppDemo.View.NewsPage">
     <ContentPage.Content>
 
-        <Grid BackgroundColor="Red">
+        <Grid >
             <ListView x:Name="newsListView">
                 <ListView.ItemTemplate>
                     <DataTemplate>
-                        <Frame BorderColor="Gray"
-                                   CornerRadius="5"
-                                   Padding="8">
-                            <StackLayout>
+                        <StackLayout>
                                 <Label Text="Card Example"
                                            FontSize="Medium"
                                            FontAttributes="Bold" />
@@ -23,7 +20,6 @@
                                              HorizontalOptions="Fill" />
                                 <Label Text="Frames can wrap more complex layouts to create more complex UI components, such as this card!"/>
                             </StackLayout>
-                        </Frame>
                     </DataTemplate>
                 </ListView.ItemTemplate>
             </ListView>

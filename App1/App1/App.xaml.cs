@@ -7,8 +7,7 @@ namespace AppDemo
 {
     public partial class App : Application
     {
-        public static string BaseImageUrl { get; } = "https://cdn.syncfusion.com/essential-ui-kit-for-xamarin.forms/common/uikitimages/";
-        public App()
+       public App()
         {
             InitializeComponent();
             MainPage = new MainPage();
@@ -19,13 +18,13 @@ namespace AppDemo
         {
             InitializeComponent();
 
-            var navPage = new NavigationPage(new ItemsPage()) { Title = "Home" };
-            var mdp = new MasterDetailPage()
-            {
-                Master = new MenuPage(),
-                Detail = navPage
-            };
-            MainPage = mdp;
+            //var navPage = new NavigationPage(new ItemsPage()) { Title = "Home" };
+            //var mdp = new MasterDetailPage()
+            //{
+            //    Master = new MasterPage(),
+            //    Detail = navPage
+            //};
+            MainPage = new MasterPage();
             //MainPage = new NavigationPage(new MainPage());
 
             RUTA_DB = ruta_db;

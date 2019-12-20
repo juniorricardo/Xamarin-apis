@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Shell xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="AppDemo.View.MasterPage"
+             xmlns:pages="clr-namespace:AppDemo.View;assembly=AppDemo"
+             BackgroundColor="#8e8f66"
+             x:Name="Shell">
+
+    <Shell.FlyoutHeaderTemplate>
+        <DataTemplate>
+            <Grid BackgroundColor="Black" HeightRequest="200">
+                <Image 
+                    Aspect="AspectFill" 
+                    Opacity="0.6" 
+                    Source="dog01.jpg"/>
+                <Frame 
+                       Padding="0" 
+                       CornerRadius="100" 
+                       IsClippedToBounds="True" 
+                       VerticalOptions="Center" 
+                       HorizontalOptions="Center" 
+                       HeightRequest="100" 
+                       WidthRequest="100">
+                    <Image 
+                        Source="profile.png" 
+                        VerticalOptions="Center" 
+                        HorizontalOptions="Center" />
+                </Frame>
+                <Label 
+                    Text="Bienvenido !" 
+                    TextColor="White" 
+                    FontAttributes="Bold" 
+                    FontSize="30"
+                    HorizontalOptions="Center" 
+                    VerticalOptions="EndAndExpand"/>
+            </Grid>
+        </DataTemplate>
+    </Shell.FlyoutHeaderTemplate>
+    <FlyoutItem Title="Home">
+        <Tab>
+            <ShellContent ContentTemplate="{DataTemplate pages:MainPage}" />
+        </Tab>
+    </FlyoutItem>
+    <FlyoutItem Title="Lista">
+        <Tab >
+            <ShellContent ContentTemplate="{DataTemplate pages:ListPage}"/>
+        </Tab>
+    </FlyoutItem>
+    <FlyoutItem Title="Noticias" >
+        <Tab>
+            <ShellContent ContentTemplate="{DataTemplate pages:NewsPage}"/>
+        </Tab>
+    </FlyoutItem>
+
+
+</Shell>

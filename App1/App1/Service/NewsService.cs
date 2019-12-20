@@ -25,7 +25,8 @@ namespace AppDemo.Service
                 var articlesResponse = newsApiClient.GetTopHeadlines(new TopHeadlinesRequest()
                 {
                     Country = Countries.AR,
-                    Category = Categories.Sports
+                    Category = Categories.Sports,
+                    PageSize = 3
                 });
                 //var articlesResponse = newsApiClient.GetEverything(new EverythingRequest
                 //{

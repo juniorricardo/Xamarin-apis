@@ -1,63 +1,38 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
-<MasterDetailPage xmlns="http://xamarin.com/schemas/2014/forms"
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
              x:Class="AppDemo.View.MainPage"
              xmlns:views="clr-namespace:AppDemo.View"
-             BackgroundColor="{StaticResource colorFondo}">
+             BackgroundImageSource="background.jpg">
 
-    <MasterDetailPage.Master>
-        <views:MenuPage />
+    
+    <!--<MasterDetailPage.Master>
+        <views:MainPage />
     </MasterDetailPage.Master>
 
     <MasterDetailPage.Detail>
         <NavigationPage>
-            <!--<NavigationPage.Icon>
+            --><!--<NavigationPage.Icon>
                 <OnPlatform x:TypeArguments="FileImageSource">
                     <On Platform="iOS" Value="tab_feed.png"/>
                 </OnPlatform>
-            </NavigationPage.Icon>-->
+            </NavigationPage.Icon>--><!--
             <x:Arguments>
                 <views:ItemsPage />
             </x:Arguments>
         </NavigationPage>
-    </MasterDetailPage.Detail>
+    </MasterDetailPage.Detail>-->
     
     <!--<ContentPage.ToolbarItems>
         <ToolbarItem Text="Agregar"
                      Clicked="ToolbarItem_Clicked"/>
-    </ContentPage.ToolbarItems>
+    </ContentPage.ToolbarItems>-->
 
     <Grid>
-        <Grid>
-            <ListView x:Name="contactosListView">
-                <ListView.ItemTemplate>
-                    <DataTemplate>
-                        <TextCell   Text="{Binding Nombre}"
-                                    Detail="{Binding Apellido}"
-                                    TextColor="#D9C5AD"/>
-                    </DataTemplate>
-                </ListView.ItemTemplate>
-            </ListView>
-        </Grid>
-
-        <Grid>
-            <StackLayout Margin="40" Padding="10" 
-                         BackgroundColor="#f4f4f2"
-                         VerticalOptions="Center">
-                <Label  Text="Consultar clima"
-                        HorizontalOptions="Center"/>
-                <Entry  x:Name="climaEntry"
-                        Placeholder="Ingrese la ubicacion"
-                        HorizontalTextAlignment="Center"/>
-                <Button Clicked="Button_Clicked"
-                        Text="Buscar clima" />
-                <Label x:Name="lblTitulo"/>
-                <Label x:Name="lblTemperatura"/>
-            </StackLayout>
-        </Grid>
-    </Grid>-->
+        <Label Text="Estamos en el MainPage!!"/>
+    </Grid>
     
-</MasterDetailPage>
+</ContentPage>

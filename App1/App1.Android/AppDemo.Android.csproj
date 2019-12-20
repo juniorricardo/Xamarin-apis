@@ -56,21 +56,6 @@
     <PackageReference Include="sqlite-net-pcl">
       <Version>1.6.292</Version>
     </PackageReference>
-    <PackageReference Include="Syncfusion.Xamarin.Buttons">
-      <Version>17.4.0.39</Version>
-    </PackageReference>
-    <PackageReference Include="Syncfusion.Xamarin.Core">
-      <Version>17.4.0.39</Version>
-    </PackageReference>
-    <PackageReference Include="Syncfusion.Xamarin.SfComboBox">
-      <Version>17.4.0.39</Version>
-    </PackageReference>
-    <PackageReference Include="Syncfusion.Xamarin.SfListView">
-      <Version>17.4.0.39</Version>
-    </PackageReference>
-    <PackageReference Include="Syncfusion.Xamarin.SfRating">
-      <Version>17.4.0.39</Version>
-    </PackageReference>
     <PackageReference Include="Xamarin.Forms" Version="4.4.0.991265" />
     <PackageReference Include="Xamarin.Essentials" Version="1.3.1" />
   </ItemGroup>
@@ -107,7 +92,9 @@
     <AndroidResource Include="Resources\mipmap-xxxhdpi\icon.png" />
     <AndroidResource Include="Resources\mipmap-xxxhdpi\launcher_foreground.png" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\background.jpg" />
+  </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\App1\AppDemo.csproj">
       <Project>{E203DCF9-9C97-47A5-BBE4-8B4714D66BFA}</Project>

@@ -13,12 +13,16 @@
                     RowHeight="60">
             <ListView.Header>
                 <StackLayout Padding="10,10,10,50">
-                    <Image Source="dog01.jpg" />
-                    <Label x:Name="lblClima" 
-                       Text="clima"
-                       Padding="50"
-                       HorizontalTextAlignment="Center" />
-                    
+                    <Grid>
+                        <Image Source="dog01.jpg" 
+                               Opacity="0.3"
+                               BackgroundColor="Black"/>
+                        <Label x:Name="lblClima" 
+                               Text="clima"
+                               Padding="50"
+                               HorizontalTextAlignment="Center" 
+                               FontSize="60" TextColor="White"/>
+                    </Grid>
                 </StackLayout>
             </ListView.Header>
 
@@ -37,7 +41,7 @@
                                HorizontalOptions="Center">
                             <Label Text="{Binding Title}" 
                                    d:Text="{Binding .}" 
-                                   FontSize="20"/>
+                                   FontSize="30"/>
                         </Grid>
                     </ViewCell>
                 </DataTemplate>
@@ -45,4 +49,6 @@
 
         </ListView>
     </StackLayout>
+    
+    
 </ContentPage>

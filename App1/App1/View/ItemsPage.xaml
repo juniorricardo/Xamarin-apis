@@ -13,6 +13,15 @@
     </ContentPage.ToolbarItems>
     
     <StackLayout>
+
+        <Grid>
+            <ImageButton Source="background.jpg"/>
+            <Label Text="Estamos en la pantalla principal!" 
+                   TextColor="White"
+                   FontSize="20"
+                   VerticalTextAlignment="Center"
+                   HorizontalTextAlignment="Center"/>
+        </Grid>
         <!--<ListView x:Name="ItemsListView"
                 ItemsSource="{Binding Items}"
                 VerticalOptions="FillAndExpand"
@@ -51,8 +60,6 @@
                 </DataTemplate>
             </ListView.ItemTemplate>
         </ListView>-->
-
-        <Label Text="Estamos en la pantalla principal!" />
 
     </StackLayout>
 
