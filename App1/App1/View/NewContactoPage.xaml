@@ -5,6 +5,11 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
              x:Class="AppDemo.View.NewContactoPage">
+
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="Cancel" Clicked="Cancel_Clicked" />
+        <ToolbarItem Text="Save" Clicked="Save_Clicked" />
+    </ContentPage.ToolbarItems>
     <ContentPage.Content>
         <StackLayout Margin="20">
 
@@ -20,9 +25,6 @@
                    Style="{StaticResource nuevoEstilo}"
                    Keyboard="Telephone"
                    Placeholder="Numero" />
-            <Button Text="Guardar"
-                    Clicked="Button_Clicked"/>
-
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

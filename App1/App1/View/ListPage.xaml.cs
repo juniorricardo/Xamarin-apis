@@ -32,12 +32,19 @@ namespace AppDemo.View
                 listaContactos = conn.Table<Contacto>().ToList();
             }
             contactosListView.ItemsSource = listaContactos;
+
         }
 
         private void ContactosListView_ItemSelected(object sender, SelectedItemChangedEventArgs e)
         {
             var contactoSeleccionado = e.SelectedItem as Contacto;
             Navigation.PushAsync(new DetailContactoPage(contactoSeleccionado));
+            contactosListView.SelectedItem = null;
+        }
+
+        async void ToolbarItem_Clicked(object sender, EventArgs e)
+        {
+            await Navigation.PushModalAsync(new NavigationPage(new NewContactoPage()));
         }
     }
 }

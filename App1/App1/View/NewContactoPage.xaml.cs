@@ -18,7 +18,7 @@ namespace AppDemo.View
             InitializeComponent();
         }
 
-        private void Button_Clicked(object sender, EventArgs e)
+        async void Save_Clicked(object sender, EventArgs e)
         {
             Contacto nuevoContacto = new Contacto()
             {
@@ -33,6 +33,11 @@ namespace AppDemo.View
                 conn.CreateTable<Contacto>();
                 conn.Insert(nuevoContacto);
             }
+            await Navigation.PopModalAsync();
+        }
+        async void Cancel_Clicked(object sender, EventArgs e)
+        {
+            await Navigation.PopModalAsync();
         }
     }
 }

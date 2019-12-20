@@ -7,7 +7,8 @@
              x:Class="AppDemo.View.MasterPage"
              xmlns:pages="clr-namespace:AppDemo.View;assembly=AppDemo"
              BackgroundColor="#8e8f66"
-             x:Name="Shell">
+             x:Name="Shell"
+             Title="Menu">
 
     <Shell.FlyoutHeaderTemplate>
         <DataTemplate>
@@ -36,6 +37,16 @@
                     FontSize="30"
                     HorizontalOptions="Center" 
                     VerticalOptions="EndAndExpand"/>
+                <Label x:Name="ciudadLabel" 
+                               Text="clima"
+                               Padding="50"
+                               HorizontalTextAlignment="Center" 
+                               FontSize="60" TextColor="White"/>
+                <Label x:Name="temperaturaLabel" 
+                               Text="temperatura"
+                               Padding="50"
+                               HorizontalTextAlignment="Center" 
+                               FontSize="60" TextColor="White"/>
             </Grid>
         </DataTemplate>
     </Shell.FlyoutHeaderTemplate>

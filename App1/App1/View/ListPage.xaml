@@ -5,6 +5,9 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
              x:Class="AppDemo.View.ListPage">
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="Agregar" Clicked="ToolbarItem_Clicked" />
+    </ContentPage.ToolbarItems>
     <ContentPage.Content>
         <Grid>
             <ListView x:Name="contactosListView">

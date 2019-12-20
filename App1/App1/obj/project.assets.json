@@ -766,23 +766,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\jrhuamani\\.nuget\\packages\\": {},
-    "C:\\Microsoft\\Xamarin\\NuGet\\": {}
+    "C:\\Users\\Cina\\.nuget\\packages\\": {},
+    "E:\\Microsoft\\Xamarin\\NuGet\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\jrhuamani\\source\\repos\\App1\\App1\\App1\\AppDemo.csproj",
+      "projectUniqueName": "E:\\Mitsuha\\Repositorio\\CDA\\Xamarin-demo\\App1\\App1\\AppDemo.csproj",
       "projectName": "AppDemo",
-      "projectPath": "C:\\Users\\jrhuamani\\source\\repos\\App1\\App1\\App1\\AppDemo.csproj",
-      "packagesPath": "C:\\Users\\jrhuamani\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\jrhuamani\\source\\repos\\App1\\App1\\App1\\obj\\",
+      "projectPath": "E:\\Mitsuha\\Repositorio\\CDA\\Xamarin-demo\\App1\\App1\\AppDemo.csproj",
+      "packagesPath": "C:\\Users\\Cina\\.nuget\\packages\\",
+      "outputPath": "E:\\Mitsuha\\Repositorio\\CDA\\Xamarin-demo\\App1\\App1\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "C:\\Microsoft\\Xamarin\\NuGet\\"
+        "E:\\Microsoft\\Xamarin\\NuGet\\"
       ],
       "configFilePaths": [
-        "C:\\Users\\jrhuamani\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Cina\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
       ],

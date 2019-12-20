@@ -26,16 +26,16 @@ namespace AppDemo.View
         {
             InitializeComponent();
 
-            myServiceNews = new NewsService();
+            //myServiceNews = new NewsService();
 
         }
 
-        protected override void OnAppearing()
-        {
-            base.OnAppearing();
-            listaNoticias = myServiceNews.getNews();
-            newsListView.ItemsSource = listaNoticias;
-        }
+        //protected override void OnAppearing()
+        //{
+        //    base.OnAppearing();
+        //    listaNoticias = myServiceNews.getNews();
+        //    newsListView.ItemsSource = listaNoticias;
+        //}
 
     }
 }
