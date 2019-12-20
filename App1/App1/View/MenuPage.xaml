@@ -12,8 +12,8 @@
                     HasUnevenRows="True"
                     RowHeight="60">
             <ListView.Header>
-                <StackLayout Padding="10,5,0,5">
-                    <Image Source="dog-01.jpg" />
+                <StackLayout Padding="10,10,10,50">
+                    <Image Source="dog01.jpg" />
                     <Label x:Name="lblClima" 
                        Text="clima"
                        Padding="50"

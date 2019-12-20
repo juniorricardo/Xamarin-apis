@@ -6,24 +6,27 @@
              mc:Ignorable="d"
              x:Class="AppDemo.View.NewsPage">
     <ContentPage.Content>
-        <StackLayout Padding="20"
-                     HorizontalOptions="CenterAndExpand"
-                     BackgroundColor="{StaticResource colorFondo}">
-            <Frame>
-                <Label Text="News!Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dignissimos libero eius quidem reiciendis." />
-            </Frame>
-            <Frame>
-                <Label Text="News!Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dignissimos libero eius quidem reiciendis." />
-            </Frame>
-            <Frame>
-                <Label Text="News!Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dignissimos libero eius quidem reiciendis." />
-            </Frame>
-            <Frame>
-                <Label Text="News!Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dignissimos libero eius quidem reiciendis." />
-            </Frame>
-            <Frame>
-                <Label Text="News!Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dignissimos libero eius quidem reiciendis." />
-            </Frame>
-        </StackLayout>
+
+        <Grid BackgroundColor="Red">
+            <ListView x:Name="newsListView">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <Frame BorderColor="Gray"
+                                   CornerRadius="5"
+                                   Padding="8">
+                            <StackLayout>
+                                <Label Text="Card Example"
+                                           FontSize="Medium"
+                                           FontAttributes="Bold" />
+                                <BoxView Color="Gray"
+                                             HeightRequest="2"
+                                             HorizontalOptions="Fill" />
+                                <Label Text="Frames can wrap more complex layouts to create more complex UI components, such as this card!"/>
+                            </StackLayout>
+                        </Frame>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </Grid>
     </ContentPage.Content>
 </ContentPage>

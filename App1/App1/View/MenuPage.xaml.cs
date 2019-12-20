@@ -16,7 +16,7 @@ namespace AppDemo.View
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class MenuPage : ContentPage
     {
-        MainPage RootPage { get => Application.Current.MainPage as MainPage; }
+        //MainPage RootPage { get => Application.Current.MainPage as MainPage; }
         List<HomeMenuItem> MenuPages { get; set; }
         WeatherService myService;
         public MenuPage()
@@ -41,7 +41,6 @@ namespace AppDemo.View
             //    var id = (int)((HomeMenuItem)e.SelectedItem).Id;
             //    await RootPage.NavigateFromMenu(id);
             //};
-
 
             ListViewMenu.ItemSelected += OnItemSelected;
             myService = new WeatherService();
@@ -94,11 +93,9 @@ namespace AppDemo.View
         //}
         async void OnItemSelected(object sender, SelectedItemChangedEventArgs e)
         {
-            var item = e.SelectedItem as HomeMenuItem;
-            if (item != null)
+            if (e.SelectedItem is HomeMenuItem item)
             {
                 await Navigation.PushModalAsync((Page)Activator.CreateInstance(item.TargetType));
-                
             }
         }
     }

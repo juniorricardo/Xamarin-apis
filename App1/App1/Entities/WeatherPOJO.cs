@@ -12,6 +12,12 @@ namespace AppDemo.Entities
 
         [JsonProperty("main")]
         public Main Main { get; set; }
+
+        //[JsonProperty("weather")]
+        //public Weather Weather { get; set; }
+
+        //[JsonProperty("sys")]
+        //public Sys Sys { get; set; }
     }
 
     public class Main
@@ -19,4 +25,20 @@ namespace AppDemo.Entities
         [JsonProperty("temp")]
         public double Temperature { get; set; }
     }
+    //public class Weather
+    //{
+    //    [JsonProperty("main")]
+    //    public string main { get; set; }
+        
+    //    [JsonProperty("description")]
+    //    public string description { get; set; }
+
+    //    [JsonProperty("icon")]
+    //    public string icon { get; set; }
+    //}
+    //public class Sys
+    //{
+    //    [JsonProperty("country")]
+    //    public string country { get; set; }
+    //}
 }
