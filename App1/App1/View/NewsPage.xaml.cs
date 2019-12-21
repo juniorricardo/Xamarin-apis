@@ -21,7 +21,7 @@ namespace AppDemo.View
 
         public static List<NewsPOJO> listaNoticias = new List<NewsPOJO>();
 
-        NewsService myServiceNews;
+        //NewsService myServiceNews;
         public NewsPage()
         {
             InitializeComponent();

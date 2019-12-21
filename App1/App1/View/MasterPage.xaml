@@ -7,8 +7,7 @@
              x:Class="AppDemo.View.MasterPage"
              xmlns:pages="clr-namespace:AppDemo.View;assembly=AppDemo"
              BackgroundColor="#8e8f66"
-             x:Name="Shell"
-             Title="Menu">
+             x:Name="Shell">
 
     <Shell.FlyoutHeaderTemplate>
         <DataTemplate>
@@ -17,39 +16,23 @@
                     Aspect="AspectFill" 
                     Opacity="0.6" 
                     Source="dog01.jpg"/>
-                <Frame 
-                       Padding="0" 
-                       CornerRadius="100" 
-                       IsClippedToBounds="True" 
-                       VerticalOptions="Center" 
-                       HorizontalOptions="Center" 
-                       HeightRequest="100" 
-                       WidthRequest="100">
-                    <Image 
-                        Source="profile.png" 
+                <Frame Style="{StaticResource frameImgAvatar}">
+                    <Image Source="profile.png" 
                         VerticalOptions="Center" 
                         HorizontalOptions="Center" />
                 </Frame>
-                <Label 
+                <Label
                     Text="Bienvenido !" 
                     TextColor="White" 
                     FontAttributes="Bold" 
                     FontSize="30"
                     HorizontalOptions="Center" 
                     VerticalOptions="EndAndExpand"/>
-                <Label x:Name="ciudadLabel" 
-                               Text="clima"
-                               Padding="50"
-                               HorizontalTextAlignment="Center" 
-                               FontSize="60" TextColor="White"/>
-                <Label x:Name="temperaturaLabel" 
-                               Text="temperatura"
-                               Padding="50"
-                               HorizontalTextAlignment="Center" 
-                               FontSize="60" TextColor="White"/>
             </Grid>
         </DataTemplate>
     </Shell.FlyoutHeaderTemplate>
+
+
     <FlyoutItem Title="Home">
         <Tab>
             <ShellContent ContentTemplate="{DataTemplate pages:MainPage}" />
@@ -65,6 +48,4 @@
             <ShellContent ContentTemplate="{DataTemplate pages:NewsPage}"/>
         </Tab>
     </FlyoutItem>
-
-
 </Shell>

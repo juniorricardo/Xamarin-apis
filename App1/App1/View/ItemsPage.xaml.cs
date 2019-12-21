@@ -22,5 +22,10 @@ namespace AppDemo.View
         {
             Navigation.PushAsync(new NewContactoPage());
         }
+
+        private void ToolbarItem_Clicked(object sender, EventArgs e)
+        {
+
+        }
     }
 }

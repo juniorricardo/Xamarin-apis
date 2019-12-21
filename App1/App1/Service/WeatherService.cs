@@ -18,7 +18,7 @@ namespace AppDemo.Service
             _client = new HttpClient();
         }
 
-        public async Task<WeatherPOJO> GetWeatherData(string query)
+        public async Task<WeatherPOJO> GetWeatherDataCity(string query)
         {
             WeatherPOJO weatherData = null;
             try
@@ -28,6 +28,25 @@ namespace AppDemo.Service
                 {
                     var content = await response.Content.ReadAsStringAsync();
                     weatherData = JsonConvert.DeserializeObject<WeatherPOJO>(content);
+                }
+            }
+            catch (Exception ex)
+            {
+                Debug.WriteLine("\t\tERROR {0}", ex.Message);
+            }
+
+            return weatherData;
+        }
+        public async Task<WeatherObjectJson> GetWeatherDataCord(string query)
+        {
+            WeatherObjectJson weatherData = null;
+            try
+            {
+                var response = await _client.GetAsync(query);
+                if (response.IsSuccessStatusCode)
+                {
+                    var content = await response.Content.ReadAsStringAsync();
+                    weatherData = JsonConvert.DeserializeObject<WeatherObjectJson>(content);
                 }
             }
             catch (Exception ex)

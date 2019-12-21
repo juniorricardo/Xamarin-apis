@@ -43,11 +43,10 @@ namespace AppDemo.View
             //};
 
             ListViewMenu.ItemSelected += OnItemSelected;
-            myService = new WeatherService();
-            getClima(myService);
+            //myService = new WeatherService();
+            //getClima(myService);
         }
 
-        #region Metodos-Clima
         string GenerateRequestUri(string endpoint)
         {
             string requestUri = endpoint;
@@ -57,39 +56,10 @@ namespace AppDemo.View
             return requestUri;
         }
 
-        private async void getClima(object sender)
-        {
-            WeatherPOJO weatherData = await myService.GetWeatherData(GenerateRequestUri(ConnectionApiOpenWeather.OpenWeatherMapEndpoint));
-            lblClima.Text = $"{weatherData.Title} {weatherData.Main.Temperature.ToString()}";
-        }
-        #endregion
-
-        //public async Task NavigateFromMenu(int id)
+        //private async void getClima(object sender)
         //{
-        //    if (!MenuPages.ContainsKey(id))
-        //    {
-        //        switch (id)
-        //        {
-        //            case (int)MenuItemType.Lista:
-        //                MenuPages.Add(id, new NavigationPage(new ListPage()));
-        //                break;
-        //            case (int)MenuItemType.Noticias:
-        //                MenuPages.Add(id, new NavigationPage(new NewsPage()));
-        //                break;
-        //        }
-        //    }
-
-        //    var newPage = MenuPages[id];
-
-        //    if (newPage != null && Detail != newPage)
-        //    {
-        //        Detail = newPage;
-
-        //        if (Device.RuntimePlatform == Device.Android)
-        //            await Task.Delay(100);
-
-        //        IsPresented = false;
-        //    }
+        //    //WeatherPOJO weatherData = await myService.GetWeatherData(GenerateRequestUri(ConnectionApiOpenWeather.OpenWeatherMapEndpoint));
+        //    //lblClima.Text = $"{weatherData.Title} {weatherData.Main.Temperature.ToString()}";
         //}
         async void OnItemSelected(object sender, SelectedItemChangedEventArgs e)
         {

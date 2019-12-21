@@ -8,31 +8,60 @@
              xmlns:views="clr-namespace:AppDemo.View"
              BackgroundImageSource="background.jpg">
 
-    
+
     <!--<MasterDetailPage.Master>
         <views:MainPage />
     </MasterDetailPage.Master>
 
     <MasterDetailPage.Detail>
         <NavigationPage>
-            --><!--<NavigationPage.Icon>
+            -->
+    <!--<NavigationPage.Icon>
                 <OnPlatform x:TypeArguments="FileImageSource">
                     <On Platform="iOS" Value="tab_feed.png"/>
                 </OnPlatform>
-            </NavigationPage.Icon>--><!--
+            </NavigationPage.Icon>-->
+    <!--
             <x:Arguments>
                 <views:ItemsPage />
             </x:Arguments>
         </NavigationPage>
     </MasterDetailPage.Detail>-->
-    
+
     <!--<ContentPage.ToolbarItems>
         <ToolbarItem Text="Agregar"
                      Clicked="ToolbarItem_Clicked"/>
     </ContentPage.ToolbarItems>-->
 
-    <Grid>
-        <Label Text="Estamos en el MainPage!!"/>
+    <Grid Padding="30"
+          VerticalOptions="Start">
+        <StackLayout>
+            <Frame Style="{StaticResource frameImgClima}">
+                <Image Source="outdoors.jpg"
+                         Aspect="AspectFill"
+                         Margin="-20"
+                         HeightRequest="100"
+                         WidthRequest="100" />
+            </Frame>
+            <Frame Style="{StaticResource frameInfo}">
+                <StackLayout HorizontalOptions="Center">
+                    <Label x:Name="ciudadlbl"
+                        Text="Cuidad" />
+                    <Label x:Name="temperaturalbl"
+                        Text="temperatura" />
+                </StackLayout>
+            </Frame>
+
+            <Frame Style="{StaticResource frameInfo}">
+                <StackLayout>
+                    <Label x:Name="climaUbicacionlbl" 
+                           Text="Buscando clima..."/>
+                    <Button Text="Buscar"
+                            Clicked="Button_Clicked"/>
+                </StackLayout>
+            </Frame>
+
+        </StackLayout>
     </Grid>
-    
+
 </ContentPage>

@@ -29,7 +29,7 @@ namespace AppDemo.Entities
     //{
     //    [JsonProperty("main")]
     //    public string main { get; set; }
-        
+
     //    [JsonProperty("description")]
     //    public string description { get; set; }
 
