@@ -7,29 +7,26 @@
              x:Class="AppDemo.View.NewsViewPage">
 
     <ContentPage.Content>
+        
         <ListView x:Name="listNewsView"
-                  ItemsSource="{Binding articles}">
+                  RowHeight="100">
             <ListView.ItemTemplate>
                 <DataTemplate>
-                    <ViewCell>
-                        <Frame>
-                            <StackLayout>
-                                <StackLayout Orientation="Horizontal"
-                                              VerticalOptions="Center"
-                                              Spacing="10">
+                    <ViewCell Height="100" >
+                        <StackLayout>
+                            <Frame>
+                                <StackLayout Orientation="Horizontal">
                                     <Image Source="{Binding urlToImage}"
-                                           Aspect="AspectFit" />
-                                    <Label Text="{Binding title}"
-                                           FontSize="18"
-                                           TextColor="White"
+                                           HeightRequest="80"/>
+                                    <StackLayout>
+                                        <Label Text="{Binding title}"
                                            VerticalTextAlignment="Center"/>
-                                    <Label Text="{Binding description}"
-                                           FontSize="18"
-                                           TextColor="White"
-                                           VerticalTextAlignment="Center" />
+                                        <Label Text="{Binding description}"
+                                           VerticalTextAlignment="Center"/>
+                                    </StackLayout>
                                 </StackLayout>
-                            </StackLayout>
-                        </Frame>
+                            </Frame>
+                        </StackLayout>
                     </ViewCell>
                 </DataTemplate>
             </ListView.ItemTemplate>

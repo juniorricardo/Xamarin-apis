@@ -29,9 +29,10 @@ namespace AppDemo.View
 
         private async void findNews(object sender)
         {
-            NewsPOJO news;
-            news = await myServiceNews.getNews(GenerateRequestUri(ConnectionApiNews.NewsApiEndPoint));
-            this.listNewsView.ItemsSource = news.articles;
+            articulos = await myServiceNews.getNews(GenerateRequestUri(ConnectionApiNews.NewsApiEndPoint));
+            var descrip = articulos.articles.FirstOrDefault().description;
+            var autor = articulos.articles.FirstOrDefault().author;
+            this.listNewsView.ItemsSource = articulos.articles;
         }
 
         public string GenerateRequestUri(string enEndPoint)
