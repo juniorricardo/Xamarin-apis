@@ -29,13 +29,6 @@ namespace AppDemo.View
             getClima();
 
         }
-        //protected override void OnAppearing()
-        //{
-        //    base.OnAppearing();
-        //    getClima(myService);
-        //}
-
-        
         public string GenerateRequestUriCity(string endpoint)
         {
             string requestUri = endpoint;
@@ -52,7 +45,6 @@ namespace AppDemo.View
             ciudadlbl.Text = $"{weatherData.Title}";
             temperaturalbl.Text = $"{weatherData.Main.Temperature.ToString()}";
         }
-
         
 
         private async Task getClimaCordAsync(object sender, double enLatitud, double enLongitud)
@@ -60,17 +52,16 @@ namespace AppDemo.View
             WeatherCord weatherCord;
             weatherCord = await myService.GetWeatherDataCord(GenerateRequestUriCord(ConnectionApiOpenWeather.OpenWeatherMapEndpoint, enLatitud, enLatitud));
             
-            var ciudad = weatherCord.name;
-            var pais = weatherCord.sys.country;
-            var clima = weatherCord.weather.FirstOrDefault().main;
-            var descripcionClima = weatherCord.weather.FirstOrDefault().description;
-            var temperatura = weatherCord.main.temp;
-
-            climaUbicacionlbl.Text = $"{ciudad} - {pais} ; Temperatura: {temperatura}; Clima: {clima}, {descripcionClima}";
+            this.Uciudadlbl.Text= weatherCord.name;
+            this.Upaislbl.Text = weatherCord.sys.country;
+            this.Uclimalbl.Text = weatherCord.weather.FirstOrDefault().main;
+            this.Udescripcionlbl.Text = weatherCord.weather.FirstOrDefault().description;
+            this.Utemperaturalbl.Text = weatherCord.main.temp.ToString();
+            //climaUbicacionlbl.Text = $"{ciudad} - {pais} ; Temperatura: {temperatura}; Clima: {clima}, {descripcionClima}";
         }
         public string GenerateRequestUriCord(string endpoint, double enLatitud, double enLongitud)
         {
-            /*  
+            /**  
              *  api.openweathermap.org/data/2.5/weather
              *  ?lat=-45.57524
              *  &lon=-72.06619
@@ -93,7 +84,7 @@ namespace AppDemo.View
 
                 if (location != null)
                 {
-                    climaUbicacionlbl.Text = $"Latitude: {location.Latitude}, Longitude: {location.Longitude}, Altitude: {location.Altitude}";
+                    //climaUbicacionlbl.Text = $"Latitude: {location.Latitude}, Longitude: {location.Longitude}, Altitude: {location.Altitude}";
                     lat = location.Latitude;
                     lon = location.Longitude;
                     await getClimaCordAsync(myService, lat, lon);

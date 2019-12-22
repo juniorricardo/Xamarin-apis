@@ -4,10 +4,11 @@
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
-             x:Class="AppDemo.View.DetailContactoPage">
+             x:Class="AppDemo.View.DetailContactoPage"
+             BackgroundColor="{StaticResource colorPaleta4}">
     
     <Grid Margin="40" 
-          Padding="10" >
+          Padding="10">
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="*"/>
             <ColumnDefinition Width="2*"/>
@@ -27,6 +28,5 @@
             <Label x:Name="telefonoLabel" 
                     Text="123-456-789"/>
         </StackLayout>
-
     </Grid>
 </ContentPage>

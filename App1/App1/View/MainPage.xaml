@@ -6,20 +6,21 @@
              mc:Ignorable="d"
              x:Class="AppDemo.View.MainPage"
              xmlns:views="clr-namespace:AppDemo.View" 
-             BackgroundColor="{StaticResource colorFondo}">
+             BackgroundColor="{StaticResource colorPaleta4}">
+    
+    
     <Grid Padding="30"
           VerticalOptions="Start">
         <StackLayout>
             <Label Text="Clima" 
-                   FontSize="20" 
-                   FontAttributes="Bold" 
+                   FontSize="50" 
                    TextColor="#1690F4" 
                    VerticalOptions="Center" 
                    HorizontalOptions="Center" 
                    Margin="20"/>
             <Frame Style="{StaticResource frameImgClima}">
                 <Image Source="dog01.jpg"
-                         Aspect="AspectFill"
+                         Aspect="AspectFill" 
                          Margin="-20"
                          HeightRequest="100"
                          WidthRequest="100" />
@@ -34,11 +35,34 @@
             </Frame>
 
             <Frame Style="{StaticResource frameInfo}">
-                <StackLayout>
-                    <Label x:Name="climaUbicacionlbl" 
-                           Text="Buscando clima..."/>
+                <StackLayout HorizontalOptions="Center">
+
+                    <StackLayout Orientation="Horizontal">
+                        <Label Text="Ciudad: " FontAttributes="Bold"/>
+                        <Label x:Name="Uciudadlbl"/>
+                    </StackLayout>
+                    <StackLayout Orientation="Horizontal">
+                        <Label Text="Pais: " FontAttributes="Bold"/>
+                        <Label x:Name="Upaislbl" />
+                    </StackLayout>
+
+                    <StackLayout Orientation="Horizontal">
+                        <Label Text="Temperatura" FontAttributes="Bold"/>
+                        <Label x:Name="Utemperaturalbl"/>
+                    </StackLayout>
+                    <StackLayout Orientation="Horizontal" >
+                        <Label Text="Clima: " FontAttributes="Bold"/>
+                        <Label x:Name="Uclimalbl" />
+                    </StackLayout>
+                    <StackLayout Orientation="Horizontal">
+                        <Label Text="Estado: " FontAttributes="Bold"/>
+                        <Label x:Name="Udescripcionlbl" />
+                    </StackLayout>
+
                     <Button Text="Buscar"
-                            Clicked="Button_Clicked_1"/>
+                            Clicked="Button_Clicked_1"
+                            BackgroundColor="{StaticResource colorPaleta1}"
+                            CornerRadius="30"/>
                 </StackLayout>
             </Frame>
 

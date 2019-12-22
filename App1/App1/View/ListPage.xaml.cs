@@ -39,7 +39,6 @@ namespace AppDemo.View
         {
             var contactoSeleccionado = e.SelectedItem as Contacto;
             Navigation.PushAsync(new DetailContactoPage(contactoSeleccionado));
-            contactosListView.SelectedItem = null;
         }
 
         async void ToolbarItem_Clicked(object sender, EventArgs e)

@@ -6,7 +6,7 @@
              mc:Ignorable="d"
              x:Class="AppDemo.View.MasterPage"
              xmlns:pages="clr-namespace:AppDemo.View;assembly=AppDemo"
-             BackgroundColor="#FF642E"
+             BackgroundColor="#444C5E"
              x:Name="Shell">
 
     <Shell.FlyoutHeaderTemplate>
@@ -34,17 +34,20 @@
     </Shell.FlyoutHeaderTemplate>
 
 
-    <FlyoutItem Title="Home">
+    <FlyoutItem Title="Home"
+                Icon="home.png">
         <Tab>
             <ShellContent ContentTemplate="{DataTemplate pages:MainPage}" />
         </Tab>
     </FlyoutItem>
-    <FlyoutItem Title="Lista">
-        <Tab >
+    <FlyoutItem Title="Lista"
+                Icon="group.png">
+        <Tab>
             <ShellContent ContentTemplate="{DataTemplate pages:ListPage}"/>
         </Tab>
     </FlyoutItem>
-    <FlyoutItem Title="Noticias" >
+    <FlyoutItem Title="Noticias" 
+                Icon="news.png">
         <Tab>
             <ShellContent ContentTemplate="{DataTemplate pages:NewsViewPage}"/>
         </Tab>

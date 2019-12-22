@@ -7,22 +7,29 @@
              x:Class="AppDemo.View.NewsViewPage">
 
     <ContentPage.Content>
-        
+
         <ListView x:Name="listNewsView"
-                  RowHeight="100">
+                  RowHeight="100"
+                  IsPullToRefreshEnabled="true"
+                  BackgroundColor="{StaticResource colorPaleta4}">
             <ListView.ItemTemplate>
                 <DataTemplate>
                     <ViewCell Height="100" >
                         <StackLayout>
-                            <Frame>
+                            <Frame Padding="2"
+                                   Margin="10,5,10,5"
+                                   HeightRequest="130"
+                                   Style="{StaticResource frameInfo}">
                                 <StackLayout Orientation="Horizontal">
                                     <Image Source="{Binding urlToImage}"
                                            HeightRequest="80"/>
                                     <StackLayout>
                                         <Label Text="{Binding title}"
-                                           VerticalTextAlignment="Center"/>
+                                               FontAttributes="Bold"
+                                                VerticalTextAlignment="Center"/>
                                         <Label Text="{Binding description}"
-                                           VerticalTextAlignment="Center"/>
+                                                VerticalTextAlignment="Center"
+                                               FontSize="Small"/>
                                     </StackLayout>
                                 </StackLayout>
                             </Frame>

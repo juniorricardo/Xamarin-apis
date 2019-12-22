@@ -23,8 +23,13 @@ namespace AppDemo.View
             articulos = new NewsPOJO();
 
             myServiceNews = new NewsService();
-            findNews(myServiceNews);
 
+        }
+
+        protected override void OnAppearing()
+        {
+            base.OnAppearing();
+            findNews(myServiceNews);
         }
 
         private async void findNews(object sender)
