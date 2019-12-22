@@ -1,0 +1,136 @@
+{
+  "status": "ok",
+  "totalResults": 10,
+  "articles": [
+    {
+      "source": {
+        "id": "bbc-news",
+        "name": "BBC News"
+      },
+      "author": "BBC News",
+      "title": "'Not much left' of Australian town ravaged by fire",
+      "description": "Residents are not yet allowed to return to Balmoral amid ongoing safety concerns over bushfires.",
+      "url": "http://www.bbc.co.uk/news/world-australia-50885772",
+      "urlToImage": "https://ichef.bbci.co.uk/news/1024/branded_news/1F6F/production/_110274080_hi058731429.jpg",
+      "publishedAt": "2019-12-22T14:36:35Z",
+      "content": "Image copyrightAFPImage caption\r\n The small community of Balmoral is 120km (75 miles) from Sydney\r\nThe leader of New South Wales, Gladys Berejiklian, says \"catastrophic\" fire conditions have almost completely razed one Australian community to the ground.\r\nShe… [+5725 chars]"
+    },
+    {
+      "source": {
+        "id": "bbc-news",
+        "name": "BBC News"
+      },
+      "author": "BBC News",
+      "title": "Mexican church founder 'abused 60 minors'",
+      "description": "The Roman Catholic group publishes its report into Marcial Maciel and the Legionaries of Christ.",
+      "url": "http://www.bbc.co.uk/news/world-latin-america-50884518",
+      "urlToImage": "https://ichef.bbci.co.uk/news/1024/branded_news/123F1/production/_110273747_66c2c20c-2d9e-4b74-bdd3-1754aba78781.jpg",
+      "publishedAt": "2019-12-22T12:17:21Z",
+      "content": "Image copyrightGetty ImagesImage caption\r\n Marcial Maciel, pictured in 2005, founded the Legionaries of Christ in 1941\r\nAt least 60 children were abused by Marcial Maciel, founder of the ultra-conservative Catholic order Legionaries of Christ, an investigatio… [+2337 chars]"
+    },
+    {
+      "source": {
+        "id": "bbc-news",
+        "name": "BBC News"
+      },
+      "author": "BBC News",
+      "title": "In pictures: El Gordo, the world's richest lottery",
+      "description": "A total of €2.38bn will be handed out at the Spanish lottery El Gordo - which means \"the fat one\".",
+      "url": "http://www.bbc.co.uk/news/world-europe-50884082",
+      "urlToImage": "https://ichef.bbci.co.uk/news/1024/branded_news/12E73/production/_110272477_mediaitem110272476.jpg",
+      "publishedAt": "2019-12-22T10:02:32Z",
+      "content": "Image copyrightReuters\r\nSpanish lottery enthusiasts are at Madrid's Royal Theatre for the draw of El Gordo - the world's richest lottery.\r\nDozens of ticket holders queued through the night outside the opera house, many of whom were dressed in eccentric costum… [+1733 chars]"
+    },
+    {
+      "source": {
+        "id": "bbc-news",
+        "name": "BBC News"
+      },
+      "author": "BBC News",
+      "title": "India PM defends protest-hit citizenship bill",
+      "description": "Prime Minister Modi accuses opposition parties of \"spreading lies\" about the controversial bill.",
+      "url": "http://www.bbc.co.uk/news/world-asia-india-50883819",
+      "urlToImage": "https://ichef.bbci.co.uk/news/1024/branded_news/1C9F/production/_110272370_gettyimages-1189663781.jpg",
+      "publishedAt": "2019-12-22T09:32:54Z",
+      "content": "Image copyrightGetty ImagesImage caption\r\n Prime Minister Narendra Modi accused opposition parties of spreading misinformation about the bill\r\nIndian Prime Minister Narendra Modi has defended the government's new citizenship law, despite the major ongoing pro… [+3121 chars]"
+    },
+    {
+      "source": {
+        "id": "bbc-news",
+        "name": "BBC News"
+      },
+      "author": "BBC News",
+      "title": "Afghan president Ghani set for second term",
+      "description": "Initial results give the incumbent a narrow majority - but the opposition is expected to appeal.",
+      "url": "http://www.bbc.co.uk/news/world-asia-50883812",
+      "urlToImage": "https://ichef.bbci.co.uk/news/1024/branded_news/AB79/production/_108979834_d2b17ee2-7399-4624-86e7-044b8d793ff9.jpg",
+      "publishedAt": "2019-12-22T08:36:32Z",
+      "content": "Image copyrightReutersImage caption\r\n Ashraf Ghani (L) and Abdullah Abdullah both claimed victory after polling day in September\r\nAfghan President Ashraf Ghani appears set to win a second term, after preliminary election results showed he was on course to win… [+2653 chars]"
+    },
+    {
+      "source": {
+        "id": "bbc-news",
+        "name": "BBC News"
+      },
+      "author": "BBC News",
+      "title": "Tesco halts card production at Chinese factory",
+      "description": "It comes after a girl reportedly found a message from Chinese prisoners in a box of Tesco Christmas cards.",
+      "url": "http://www.bbc.co.uk/news/uk-50883161",
+      "urlToImage": "https://ichef.bbci.co.uk/news/1024/branded_news/3531/production/_110271631_3c656319-f28b-413a-bb04-1da7f4fe433e.jpg",
+      "publishedAt": "2019-12-22T07:28:31Z",
+      "content": "Image copyrightReuters\r\nTesco has suspended production at a factory in China following allegations forced prison labour was used to pack charity Christmas cards. \r\nIt comes after the Sunday Times reported a six-year-old girl from south London found a message … [+2456 chars]"
+    },
+    {
+      "source": {
+        "id": "bbc-news",
+        "name": "BBC News"
+      },
+      "author": "BBC News",
+      "title": "No Christmas Mass for fire-ravaged Notre-Dame",
+      "description": "The Paris cathedral will miss its first Christmas Mass in more than 200 years as repairs continue.",
+      "url": "http://www.bbc.co.uk/news/world-europe-50883013",
+      "urlToImage": "https://ichef.bbci.co.uk/news/1024/branded_news/DCC5/production/_110271565_058739717.jpg",
+      "publishedAt": "2019-12-22T05:24:09Z",
+      "content": "Image copyrightAFPImage caption\r\n Cranes and scaffolding surround Notre-Dame Cathedral in Paris\r\nNotre-Dame Cathedral in Paris will not hold a Christmas Mass for the first time in more than 200 years, as repair work continues following April's fire.\r\nMidnight… [+1467 chars]"
+    },
+    {
+      "source": {
+        "id": "bbc-news",
+        "name": "BBC News"
+      },
+      "author": "BBC News",
+      "title": "Macron appeals to strikers not to ruin Christmas",
+      "description": "France's president urges striking transport unions to call a truce \"out of respect for families\".",
+      "url": "http://www.bbc.co.uk/news/world-europe-50881869",
+      "urlToImage": "https://ichef.bbci.co.uk/news/1024/branded_news/11A5/production/_110271540_058754195.jpg",
+      "publishedAt": "2019-12-22T04:23:59Z",
+      "content": "Image copyrightAFPImage caption\r\n Rail operator SNCF has warned that services will be severely disrupted over the holidays\r\nFrench President Emmanuel Macron has appealed to transport unions to suspend strikes that threaten travel chaos over the Christmas holi… [+2056 chars]"
+    },
+    {
+      "source": {
+        "id": "bbc-news",
+        "name": "BBC News"
+      },
+      "author": "BBC News",
+      "title": "Dancing on Ice embraces same-sex pair",
+      "description": "Primetime TV history will be made in the UK this weekend, when Dancing on Ice includes a same-sex couple in the competition.",
+      "url": "http://www.bbc.co.uk/news/entertainment-arts-50829874",
+      "urlToImage": "https://ichef.bbci.co.uk/news/1024/branded_news/E335/production/_110256185_p07yj5pj.jpg",
+      "publishedAt": "2019-12-22T00:17:47Z",
+      "content": "VideoIan 'H' Watkins from Steps has teamed up with professional skater Matt Evers to become the first same-sex duo to take part in a dance competition on British TV."
+    },
+    {
+      "source": {
+        "id": "bbc-news",
+        "name": "BBC News"
+      },
+      "author": "BBC News",
+      "title": "Cuba appoints first prime minister in decades",
+      "description": "Tourism minister Manuel Marrero Cruz is Cuba's first prime minister since Fidel Castro in 1976.",
+      "url": "http://www.bbc.co.uk/news/world-latin-america-50881820",
+      "urlToImage": "https://ichef.bbci.co.uk/news/1024/branded_news/17329/production/_110271059_058775062.jpg",
+      "publishedAt": "2019-12-22T00:09:17Z",
+      "content": "Image copyrightReutersImage caption\r\n Manuel Marrero Cruz, right, was appointed at a National Assembly session also attended by former president Raúl Castro, left\r\nCuban President Miguel Díaz-Canel has appointed the country's first prime minister in more than… [+2141 chars]"
+    }
+  ]
+}

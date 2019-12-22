@@ -6,7 +6,7 @@
              mc:Ignorable="d"
              x:Class="AppDemo.View.MasterPage"
              xmlns:pages="clr-namespace:AppDemo.View;assembly=AppDemo"
-             BackgroundColor="#8e8f66"
+             BackgroundColor="#FF642E"
              x:Name="Shell">
 
     <Shell.FlyoutHeaderTemplate>
@@ -15,9 +15,10 @@
                 <Image 
                     Aspect="AspectFill" 
                     Opacity="0.6" 
-                    Source="dog01.jpg"/>
-                <Frame Style="{StaticResource frameImgAvatar}">
-                    <Image Source="profile.png" 
+                    Source="backAvatar.jpg"/>
+                <Frame Style="{StaticResource frameImgAvatar}"
+                       BorderColor="Black">
+                    <Image Source="avatar.png" 
                         VerticalOptions="Center" 
                         HorizontalOptions="Center" />
                 </Frame>
@@ -45,7 +46,7 @@
     </FlyoutItem>
     <FlyoutItem Title="Noticias" >
         <Tab>
-            <ShellContent ContentTemplate="{DataTemplate pages:NewsPage}"/>
+            <ShellContent ContentTemplate="{DataTemplate pages:NewsViewPage}"/>
         </Tab>
     </FlyoutItem>
 </Shell>

@@ -37,16 +37,16 @@ namespace AppDemo.Service
 
             return weatherData;
         }
-        public async Task<WeatherObjectJson> GetWeatherDataCord(string query)
+        public async Task<WeatherCord> GetWeatherDataCord(string query)
         {
-            WeatherObjectJson weatherData = null;
+            WeatherCord weatherData = null;
             try
             {
                 var response = await _client.GetAsync(query);
                 if (response.IsSuccessStatusCode)
                 {
                     var content = await response.Content.ReadAsStringAsync();
-                    weatherData = JsonConvert.DeserializeObject<WeatherObjectJson>(content);
+                    weatherData = JsonConvert.DeserializeObject<WeatherCord>(content);
                 }
             }
             catch (Exception ex)

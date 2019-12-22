@@ -7,6 +7,17 @@ namespace AppDemo.Entities
 {
     public class NewsPOJO
     {
+        [JsonProperty("status")]
+        public string status {get; set;}
+        
+        [JsonProperty("totalResults")]
+        public int totalResults { get; set; }
+
+        [JsonProperty("articles")]
+        public List<Articles> articles { get; set; }
+    }
+    public class Articles
+    {
         [JsonProperty("source")]
         public Source source { get; set; }
 

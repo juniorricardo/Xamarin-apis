@@ -26,7 +26,7 @@ namespace AppDemo.View
         {
             InitializeComponent();
             myService = new WeatherService();
-            getClima(myService);
+            getClima();
 
         }
         //protected override void OnAppearing()
@@ -45,15 +45,47 @@ namespace AppDemo.View
             return requestUri;
         }
 
-        private async void getClima(object sender)
+        private async void getClima()
         {
             WeatherPOJO weatherData;
-            weatherData = await myService.GetWeatherDataCity(GenerateRequestUriCity(ConnectionApiOpenWeather.OpenWeatherMapEndpointCity));
+            weatherData = await myService.GetWeatherDataCity(GenerateRequestUriCity(ConnectionApiOpenWeather.OpenWeatherMapEndpoint));
             ciudadlbl.Text = $"{weatherData.Title}";
             temperaturalbl.Text = $"{weatherData.Main.Temperature.ToString()}";
         }
 
-        private async void Button_Clicked(object sender, EventArgs e)
+        
+
+        private async Task getClimaCordAsync(object sender, double enLatitud, double enLongitud)
+        {
+            WeatherCord weatherCord;
+            weatherCord = await myService.GetWeatherDataCord(GenerateRequestUriCord(ConnectionApiOpenWeather.OpenWeatherMapEndpoint, enLatitud, enLatitud));
+            
+            var ciudad = weatherCord.name;
+            var pais = weatherCord.sys.country;
+            var clima = weatherCord.weather.FirstOrDefault().main;
+            var descripcionClima = weatherCord.weather.FirstOrDefault().description;
+            var temperatura = weatherCord.main.temp;
+
+            climaUbicacionlbl.Text = $"{ciudad} - {pais} ; Temperatura: {temperatura}; Clima: {clima}, {descripcionClima}";
+        }
+        public string GenerateRequestUriCord(string endpoint, double enLatitud, double enLongitud)
+        {
+            /*  
+             *  api.openweathermap.org/data/2.5/weather
+             *  ?lat=-45.57524
+             *  &lon=-72.06619
+             *  &units=metric&lang=es
+             *  &appid=1a663d2e10908df23d8e0622c0fdedf9
+             */
+            string requestUri = endpoint;
+            requestUri += $"?lat={enLatitud}";
+            requestUri += $"&lon={enLongitud}";
+            requestUri += "&units=metric&lang=es";
+            requestUri += $"&APPID={ConnectionApiOpenWeather.OpenWeatherMapAPIKey}";
+            return requestUri;
+        }
+
+        private async void Button_Clicked_1(object sender, EventArgs e)
         {
             try
             {
@@ -61,7 +93,7 @@ namespace AppDemo.View
 
                 if (location != null)
                 {
-                    //climaUbicacionlbl.Text = $"Latitude: {location.Latitude}, Longitude: {location.Longitude}, Altitude: {location.Altitude}";
+                    climaUbicacionlbl.Text = $"Latitude: {location.Latitude}, Longitude: {location.Longitude}, Altitude: {location.Altitude}";
                     lat = location.Latitude;
                     lon = location.Longitude;
                     await getClimaCordAsync(myService, lat, lon);
@@ -83,28 +115,14 @@ namespace AppDemo.View
             catch (Exception ex)
             {
                 // Unable to get location
-            } 
+            }
             #endregion
         }
 
-        private async Task getClimaCordAsync(object sender, double enLatitud, double enLongitud)
+
+
+        private async void Button_Clicked(object sender, EventArgs e)
         {
-            WeatherObjectJson weatherCord;
-            weatherCord = await myService.GetWeatherDataCord(GenerateRequestUriCord(ConnectionApiOpenWeather.OpenWeatherMapEndpointCord, enLatitud, enLatitud));
-            var lista = weatherCord.list.FirstOrDefault();
-            climaUbicacionlbl.Text = $"{lista.name} - {lista.sys.country} ; {lista.main.temp}";
-        }
-        public string GenerateRequestUriCord(string endpoint, double enLatitud, double enLongitud)
-        {
-            /*  api.openweathermap.org/data/2.5/find ?lat=55.5 &lon=37.5&cnt=10
-             *  openweathermap.org/data/2.5/find?lat=55.5&lon=37.5&cnt=10&appid=b6907d289e10d714a6e88b30761fae22
-             */
-            string requestUri = endpoint;
-            requestUri += $"?lat={enLatitud}";
-            requestUri += $"&lon={enLongitud}";
-            requestUri += "&cnt=10";
-            requestUri += $"&APPID={ConnectionApiOpenWeather.OpenWeatherMapAPIKey}";
-            return requestUri;
         }
     }
 }

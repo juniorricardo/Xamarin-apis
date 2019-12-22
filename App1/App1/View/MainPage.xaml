@@ -5,39 +5,20 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
              x:Class="AppDemo.View.MainPage"
-             xmlns:views="clr-namespace:AppDemo.View"
-             BackgroundImageSource="background.jpg">
-
-
-    <!--<MasterDetailPage.Master>
-        <views:MainPage />
-    </MasterDetailPage.Master>
-
-    <MasterDetailPage.Detail>
-        <NavigationPage>
-            -->
-    <!--<NavigationPage.Icon>
-                <OnPlatform x:TypeArguments="FileImageSource">
-                    <On Platform="iOS" Value="tab_feed.png"/>
-                </OnPlatform>
-            </NavigationPage.Icon>-->
-    <!--
-            <x:Arguments>
-                <views:ItemsPage />
-            </x:Arguments>
-        </NavigationPage>
-    </MasterDetailPage.Detail>-->
-
-    <!--<ContentPage.ToolbarItems>
-        <ToolbarItem Text="Agregar"
-                     Clicked="ToolbarItem_Clicked"/>
-    </ContentPage.ToolbarItems>-->
-
+             xmlns:views="clr-namespace:AppDemo.View" 
+             BackgroundColor="{StaticResource colorFondo}">
     <Grid Padding="30"
           VerticalOptions="Start">
         <StackLayout>
+            <Label Text="Clima" 
+                   FontSize="20" 
+                   FontAttributes="Bold" 
+                   TextColor="#1690F4" 
+                   VerticalOptions="Center" 
+                   HorizontalOptions="Center" 
+                   Margin="20"/>
             <Frame Style="{StaticResource frameImgClima}">
-                <Image Source="outdoors.jpg"
+                <Image Source="dog01.jpg"
                          Aspect="AspectFill"
                          Margin="-20"
                          HeightRequest="100"
@@ -57,7 +38,7 @@
                     <Label x:Name="climaUbicacionlbl" 
                            Text="Buscando clima..."/>
                     <Button Text="Buscar"
-                            Clicked="Button_Clicked"/>
+                            Clicked="Button_Clicked_1"/>
                 </StackLayout>
             </Frame>
 

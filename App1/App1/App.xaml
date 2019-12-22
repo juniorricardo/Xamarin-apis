@@ -29,6 +29,7 @@
             <Style TargetType="Frame" x:Key="frameImgAvatar">
                 <Setter Property="Padding" Value="0"/>
                 <Setter Property="HasShadow" Value="true"/>
+                <Setter Property="BorderColor" Value="White"/>
                 <Setter Property="CornerRadius" Value="100"/>
                 <Setter Property="IsClippedToBounds" Value="True"/>
                 <Setter Property="VerticalOptions" Value="Center"/>
