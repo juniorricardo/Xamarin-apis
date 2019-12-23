@@ -15,6 +15,7 @@
             <Color x:Key="colorPaleta2">#F5F0E5</Color>
             <Color x:Key="colorPaleta3">#D4D7DB</Color>
             <Color x:Key="colorPaleta4">#444C5E</Color>
+            <Color x:Key="colorPaleta5">#E44652</Color>
 
 
             <Style TargetType="Entry">
@@ -54,7 +55,7 @@
                 <Setter Property="VerticalOptions" Value="Center"/>
             </Style>
             <Style TargetType="Frame" x:Key="frameInfo">
-                <Setter Property="BorderColor" Value="Black"/>
+                <Setter Property="BorderColor" Value="{StaticResource colorPaleta3}"/>
                 <Setter Property="CornerRadius" Value="10"/>
                 <Setter Property="HasShadow" Value="True"/>
                 <Setter Property="Padding" Value="30"/>

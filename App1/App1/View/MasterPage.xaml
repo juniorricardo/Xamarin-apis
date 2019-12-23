@@ -6,8 +6,10 @@
              mc:Ignorable="d"
              x:Class="AppDemo.View.MasterPage"
              xmlns:pages="clr-namespace:AppDemo.View;assembly=AppDemo"
-             BackgroundColor="#444C5E"
-             x:Name="Shell">
+             BackgroundColor="#3D4454"
+             x:Name="Shell"
+             Shell.NavBarHasShadow="False"
+             Shell.TabBarIsVisible="False">
 
     <Shell.FlyoutHeaderTemplate>
         <DataTemplate>

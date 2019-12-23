@@ -6,7 +6,8 @@
              mc:Ignorable="d"
              x:Class="AppDemo.View.MainPage"
              xmlns:views="clr-namespace:AppDemo.View" 
-             BackgroundColor="{StaticResource colorPaleta4}">
+             
+             BackgroundImageSource="bgHome.png" >
     
     
     <Grid Padding="30"
@@ -14,7 +15,7 @@
         <StackLayout>
             <Label Text="Clima" 
                    FontSize="50" 
-                   TextColor="#1690F4" 
+                   TextColor="{StaticResource colorPaleta2}" 
                    VerticalOptions="Center" 
                    HorizontalOptions="Center" 
                    Margin="20"/>
@@ -61,8 +62,9 @@
 
                     <Button Text="Buscar"
                             Clicked="Button_Clicked_1"
-                            BackgroundColor="{StaticResource colorPaleta1}"
-                            CornerRadius="30"/>
+                            BackgroundColor="{StaticResource colorPaleta5}"
+                            TextColor="{StaticResource colorPaleta2}"
+                            CornerRadius="10"/>
                 </StackLayout>
             </Frame>
 
