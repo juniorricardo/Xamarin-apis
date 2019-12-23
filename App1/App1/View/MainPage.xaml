@@ -26,6 +26,7 @@
             </Frame>
             <Frame Style="{StaticResource frameInfo}">
                 <StackLayout HorizontalOptions="Center">
+                    <Image Source="http://openweathermap.org/img/wn/10d@2x.png"/>
                     <Label x:Name="ciudadlbl"
                         Text="Cuidad" />
                     <Label x:Name="temperaturalbl"

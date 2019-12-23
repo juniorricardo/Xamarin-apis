@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="AppDemo.View.NuevoListaNoticias"
+             BackgroundImageSource="bgHome.png">
+
+    <ContentPage.Content>
+
+        <ListView x:Name="listNewsView"
+                  RowHeight="100"
+                  IsPullToRefreshEnabled="true">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell Height="100" >
+                        <StackLayout>
+                            <Frame Padding="2"
+                                   Margin="10,5,10,5"
+                                   HeightRequest="130"
+                                   Style="{StaticResource frameInfo}">
+                                <StackLayout Orientation="Horizontal">
+                                    <Frame Style="{StaticResource frameImgClima}" 
+                                           IsClippedToBounds="True"
+                                           Margin="10"
+                                           Padding="0">
+                                        <Image Source="{Binding urlToImage}"
+                                               Aspect="AspectFill"/>
+                                    </Frame>
+                                    <StackLayout>
+                                        <Label Text="{Binding title}"
+                                               FontAttributes="Bold"
+                                                VerticalTextAlignment="Center"/>
+                                        <Label Text="{Binding description}"
+                                                VerticalTextAlignment="Center"
+                                               FontSize="Small"/>
+                                    </StackLayout>
+                                </StackLayout>
+                            </Frame>
+                        </StackLayout>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+    </ContentPage.Content>
+
+</ContentPage>
