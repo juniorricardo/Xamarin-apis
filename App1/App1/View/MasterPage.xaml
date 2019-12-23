@@ -9,7 +9,7 @@
              BackgroundColor="#3D4454"
              x:Name="Shell"
              Shell.NavBarHasShadow="False"
-             Shell.TabBarIsVisible="False">
+             Shell.TabBarIsVisible="True">
 
     <Shell.FlyoutHeaderTemplate>
         <DataTemplate>

@@ -24,6 +24,15 @@ namespace AppDemo.View
 
             myServiceNews = new NewsService();
 
+            listNewsView.ItemSelected += NewCell_ItemSelected;
+
+        }
+
+        private void NewCell_ItemSelected(object sender, SelectedItemChangedEventArgs e)
+        {
+            var newsSelected = e.SelectedItem as Articles;
+            Navigation.PushAsync(new DetailNewPage(newsSelected));
+            //((ListView)sender).SelectedItem = null;
         }
 
         protected override void OnAppearing()

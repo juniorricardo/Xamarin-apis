@@ -5,10 +5,11 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
              x:Class="AppDemo.View.DetailContactoPage"
-             BackgroundColor="{StaticResource colorPaleta4}">
+             BackgroundImageSource="bgHome.png">
     
     <Grid Margin="40" 
-          Padding="10">
+          Padding="10"
+          BackgroundColor="{StaticResource colorPaleta2}">
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="*"/>
             <ColumnDefinition Width="2*"/>

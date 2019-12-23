@@ -4,18 +4,22 @@
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
-             x:Class="AppDemo.View.ListPage">
+             x:Class="AppDemo.View.ListPage"
+             BackgroundImageSource="bgHome.png">
     <ContentPage.ToolbarItems>
         <ToolbarItem Text="Agregar" Clicked="ToolbarItem_Clicked" />
     </ContentPage.ToolbarItems>
     <ContentPage.Content>
-        <Grid>
-            <ListView x:Name="contactosListView">
+        <Grid BackgroundColor="{StaticResource colorPaleta2}"
+              Padding="10">
+            <ListView x:Name="contactosListView"
+                      Margin="10">
                 <ListView.ItemTemplate>
                     <DataTemplate>
                         <TextCell   Text="{Binding Nombre}"
                                     Detail="{Binding Apellido}"
-                                    TextColor="#D9C5AD"/>
+                                    TextColor="#D9C5AD"
+                                    Height="100"/>
                     </DataTemplate>
                 </ListView.ItemTemplate>
             </ListView>

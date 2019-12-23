@@ -39,7 +39,19 @@ namespace AppDemo.View
         {
             var contactoSeleccionado = e.SelectedItem as Contacto;
             Navigation.PushAsync(new DetailContactoPage(contactoSeleccionado));
+            //((ListView)sender).SelectedItem = null;
         }
+
+        //async void Handle_ItemTapped(object sender, ItemTappedEventArgs e)
+        //{
+        //    if (e.Item == null)
+        //        return;
+
+        //    await DisplayAlert("Item Tapped", "An item was tapped.", "OK");
+
+        //    //Deselect Item
+        //    ((ListView)sender).SelectedItem = null;
+        //}
 
         async void ToolbarItem_Clicked(object sender, EventArgs e)
         {

@@ -5,16 +5,14 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
              x:Class="AppDemo.View.MainPage"
-             xmlns:views="clr-namespace:AppDemo.View" 
-             
+             xmlns:views="clr-namespace:AppDemo.View"
              BackgroundImageSource="bgHome.png" >
-    
-    
+
     <Grid Padding="30"
           VerticalOptions="Start">
         <StackLayout>
             <Label Text="Clima" 
-                   FontSize="50" 
+                   FontSize="30" 
                    TextColor="{StaticResource colorPaleta2}" 
                    VerticalOptions="Center" 
                    HorizontalOptions="Center" 

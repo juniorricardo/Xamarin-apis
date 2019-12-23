@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="AppDemo.View.DetailNewPage"
+             BackgroundImageSource="bgHome.png">
+
+    <ContentPage.Content>
+        <Frame CornerRadius="18"
+               Margin="20"
+               BackgroundColor="{StaticResource colorPaleta2}"
+               BorderColor="{StaticResource colorPaleta3}">
+            <StackLayout Orientation="Vertical">
+                <Grid HorizontalOptions="FillAndExpand">
+                    <Label Text="{Binding source.name}"
+                       HorizontalOptions="Start"
+                       TextColor="{StaticResource colorPaleta4}"/>
+                    <Label Text="{Binding publishedAt}"  
+                       HorizontalOptions="End"/>
+                </Grid>
+                <Label Text="{Binding title}" 
+                       FontSize="19" 
+                       FontAttributes="Bold"
+                       HorizontalTextAlignment="Center"
+                       TextColor="{StaticResource colorPaleta4}"/>
+                <Image Source="{Binding urlToImage}"
+                   HeightRequest="200"/>
+                <Label Text="{Binding description}" 
+                   FontSize="13" />
+                <Label Text="{Binding content}" 
+                   FontSize="15" />
+                <Label Text="{Binding url}"/>
+            </StackLayout>
+        </Frame>
+    </ContentPage.Content>
+
+</ContentPage>
