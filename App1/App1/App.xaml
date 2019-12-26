@@ -9,28 +9,12 @@
     <Application.Resources>
 
         <ResourceDictionary>
-            <Color x:Key="colorPrincipal">#1E90FF</Color>
-            <Color x:Key="colorSegundario">#00FF00</Color>
             <Color x:Key="colorPaleta1">#FF642E</Color>
             <Color x:Key="colorPaleta2">#F5F0E5</Color>
             <Color x:Key="colorPaleta3">#D4D7DB</Color>
             <Color x:Key="colorPaleta4">#444C5E</Color>
             <Color x:Key="colorPaleta5">#E44652</Color>
 
-
-            <Style TargetType="Entry">
-                <Setter Property="TextColor" Value="{StaticResource colorPrincipal}"/>
-                <Setter Property="FontFamily" Value="Arial"/>
-                <Setter Property="FontAttributes" Value="Bold"/>
-                <Setter Property="HorizontalTextAlignment" Value="Center"/>
-            </Style>
-
-            <Style TargetType="Entry" x:Key="nuevoEstilo">
-                <Setter Property="TextColor" Value="{StaticResource colorSegundario}"/>
-                <Setter Property="FontFamily" Value="Century"/>
-                <Setter Property="FontAttributes" Value="None"/>
-            </Style>
-            
             <Style TargetType="Frame" x:Key="frameImgAvatar">
                 <Setter Property="Padding" Value="0"/>
                 <Setter Property="BackgroundColor" Value="{StaticResource colorPaleta2}" />
@@ -43,7 +27,18 @@
                 <Setter Property="HeightRequest" Value="100"/>
                 <Setter Property="WidthRequest" Value="100"/>
             </Style>
-            <Style TargetType="Frame" x:Key="frameImgClima">
+            <Style TargetType="Frame" x:Key="frameImgWeather">
+                <Setter Property="Margin" Value="10"/>
+                <Setter Property="BorderColor" Value="{StaticResource colorPaleta3}"/>
+                <Setter Property="BackgroundColor" Value="{StaticResource colorPaleta2}" />
+                <Setter Property="CornerRadius" Value="50"/>
+                <Setter Property="HeightRequest" Value="60"/>
+                <Setter Property="WidthRequest" Value="60"/>
+                <Setter Property="IsClippedToBounds" Value="True"/>
+                <Setter Property="HorizontalOptions" Value="Center"/>
+                <Setter Property="VerticalOptions" Value="Center"/>
+            </Style>
+            <Style TargetType="Frame" x:Key="frameImgNews">
                 <Setter Property="Margin" Value="10"/>
                 <Setter Property="BorderColor" Value="{StaticResource colorPaleta3}"/>
                 <Setter Property="BackgroundColor" Value="{StaticResource colorPaleta2}" />
