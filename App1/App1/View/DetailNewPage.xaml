@@ -8,7 +8,7 @@
              BackgroundImageSource="bgHome.png">
 
     <ContentPage.Content>
-        <Frame CornerRadius="18"
+        <Frame CornerRadius="10"
                Margin="20"
                BackgroundColor="{StaticResource colorPaleta2}"
                BorderColor="{StaticResource colorPaleta3}">
