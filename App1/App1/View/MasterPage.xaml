@@ -54,10 +54,4 @@
             <ShellContent ContentTemplate="{DataTemplate pages:NewsViewPage}"/>
         </Tab>
     </FlyoutItem>
-    <FlyoutItem Title="NuevoDiseño Noticias" 
-                Icon="joven.png">
-        <Tab>
-            <ShellContent ContentTemplate="{DataTemplate pages:NuevoListaNoticias}"/>
-        </Tab>
-    </FlyoutItem>
 </Shell>

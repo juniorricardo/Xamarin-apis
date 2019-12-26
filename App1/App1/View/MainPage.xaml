@@ -17,7 +17,7 @@
                    VerticalOptions="Center" 
                    HorizontalOptions="Center" 
                    Margin="20"/>
-            <Frame Style="{StaticResource frameImgClima}">
+            <Frame Style="{StaticResource frameImgWeather}">
                 <Image Source="dog01.jpg"
                          Aspect="AspectFill" 
                          Margin="-20"

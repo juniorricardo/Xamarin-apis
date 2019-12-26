@@ -19,11 +19,9 @@
             <Entry x:Name="apellidoEntry"
                    Placeholder="Ingrese su apellido"/>
             <Entry x:Name="emailEntry"
-                   Style="{StaticResource nuevoEstilo}"
                    Placeholder="E-mail"
                    Keyboard="Email"/>
             <Entry x:Name="telefonoEntry"
-                   Style="{StaticResource nuevoEstilo}"
                    Keyboard="Telephone"
                    Placeholder="Numero" />
         </StackLayout>
