@@ -8,7 +8,7 @@
              BackgroundImageSource="bgHome.png">
 
     <ContentPage.Content>
-        <Frame CornerRadius="10"
+        <Frame CornerRadius="8"
                Margin="20"
                BackgroundColor="{StaticResource colorPaleta2}"
                BorderColor="{StaticResource colorPaleta3}">
@@ -31,7 +31,15 @@
                    FontSize="13" />
                 <Label Text="{Binding content}" 
                    FontSize="15" />
-                <Label Text="{Binding url}"/>
+                <!--Label Text="{Binding url}"/-->
+                <Button x:Name="viewBroserNews"
+                        Text="Ver articulo completo"
+                        HorizontalOptions="Center"
+                        Clicked="openBrowserNews"
+                        TextColor="{StaticResource colorPaleta2}"
+                        BackgroundColor="{StaticResource colorPaleta5}"
+                        CornerRadius="4"
+                        Margin="0,15,0,0"/>
             </StackLayout>
         </Frame>
     </ContentPage.Content>
