@@ -10,7 +10,7 @@
     <ContentPage.Content>
 
         <ListView x:Name="listNewsView" 
-                  RowHeight="280"
+                  RowHeight="320"
                   >
             <ListView.ItemTemplate>
                 <DataTemplate>
@@ -33,6 +33,17 @@
                                     </StackLayout>
                                 </StackLayout>
                             </Frame>
+                            <Grid HorizontalOptions="End"
+                                  VerticalOptions="End"
+                                  HeightRequest="40"
+                                  WidthRequest="40"
+                                  Padding="0,0,10,10">
+                                <Button x:Name="addFavorites"
+                                        Clicked="addFavorites_Clicked"/>
+                                <Image Source="like" 
+                                       Aspect="AspectFill"
+                                       HorizontalOptions="EndAndExpand" />
+                            </Grid>
                         </Grid>
                     </ViewCell>
                 </DataTemplate>

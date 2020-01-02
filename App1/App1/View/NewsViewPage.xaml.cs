@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Microsoft.Extensions.Caching.Memory;
 
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
@@ -16,6 +17,7 @@ namespace AppDemo.View
     {
         private NewsPOJO articulos;
         private NewsService myServiceNews;
+        public static IMemoryCache cache;
         public NewsViewPage()
         {
             InitializeComponent();
@@ -23,6 +25,8 @@ namespace AppDemo.View
             articulos = new NewsPOJO();
 
             myServiceNews = new NewsService();
+
+            cache = new MemoryCache(new MemoryCacheOptions() { });
 
             listNewsView.ItemSelected += NewCell_ItemSelected;
 
@@ -58,6 +62,12 @@ namespace AppDemo.View
             string requestUri = enEndPoint;
             requestUri += $"?sources=bbc-news&apikey={ConnectionApiNews.NewsApiKey}"; ;
             return requestUri;
+        }
+
+        private void addFavorites_Clicked(object sender, EventArgs e)
+        {
+            cache.Set("algo", "Estamos mal");
+            DisplayAlert("Mensaje", $"Detalle: {cache.Get("algo")}", "Ok");
         }
     }
 }
