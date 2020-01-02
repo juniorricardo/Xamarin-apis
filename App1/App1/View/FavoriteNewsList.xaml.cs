@@ -14,11 +14,9 @@ namespace AppDemo.View
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class FavoriteNewsList : ContentPage
     {
-        List<Articles> newsList;
         public FavoriteNewsList()
         {
             InitializeComponent();
-            newsList = new List<Articles>();
         }
     }
 }

@@ -15,7 +15,8 @@
             <ListView.ItemTemplate>
                 <DataTemplate>
                     <ViewCell>
-                        <Grid Margin="5,0,5,0"
+                        <Grid x:Name="Cell"
+                              Margin="5,0,5,0"
                               Padding="10,5,10,5">
                             <Frame Padding="0,0,0,0"
                                    CornerRadius="3">
@@ -38,11 +39,10 @@
                                   HeightRequest="40"
                                   WidthRequest="40"
                                   Padding="0,0,10,10">
-                                <Button x:Name="addFavorites"
-                                        Clicked="addFavorites_Clicked"/>
-                                <Image Source="like" 
-                                       Aspect="AspectFill"
-                                       HorizontalOptions="EndAndExpand" />
+                                <Button x:Name="btnAddFavorites" 
+                                        Text="Like"
+                                        Clicked="btnAddFavorites_Clicked"
+                                        CommandParameter="{Binding .}"/>
                             </Grid>
                         </Grid>
                     </ViewCell>
