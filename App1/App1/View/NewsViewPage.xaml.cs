@@ -3,12 +3,12 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 using AppDemo.Entities;
 using AppDemo.Service;
 using Microsoft.Extensions.Caching.Memory;
+using Newtonsoft.Json;
 
 namespace AppDemo.View
 {
@@ -61,7 +61,7 @@ namespace AppDemo.View
             string requestUri = enEndPoint;
             requestUri += $"?sources=bbc-news&apikey={ConnectionApiNews.NewsApiKey}"; ;
             return requestUri;
-        } 
+        }
         #endregion
 
 
@@ -70,7 +70,19 @@ namespace AppDemo.View
             var article = (Articles)((Button)sender).CommandParameter;
             if (article != null)
             {
-                CacheMemory.MyCache.Set(article.url.ToString(), article);
+                //CacheMemory.MyCache.GetOrCreate<IList<Articles>>("favorites");
+                List<Articles> favoritesList = new List<Articles>();
+                favoritesList.Add(article);
+                CacheMemory.MyCache.Set("favorites", JsonConvert.SerializeObject(favoritesList));
+
+                //if (CacheMemory.MyCache.Get("favorites") != null)
+                //{
+                //    var favList = JsonConvert.DeserializeObject<List<Articles>>(CacheMemory.MyCache.Get("favorites").ToString());
+                //    favList.Add(article);
+
+                //    var jsonListUpdate = JsonConvert.SerializeObject(favList);
+                //    CacheMemory.MyCache.Set("favorites", jsonListUpdate);
+                //}
             }
         }
     }

@@ -1,7 +1,10 @@
+using AppDemo.Entities;
 using AppDemo.View;
 using System;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
+using Microsoft.Extensions.Caching.Memory;
+using System.Collections.Generic;
 
 namespace AppDemo
 {
@@ -18,14 +21,9 @@ namespace AppDemo
         {
             InitializeComponent();
 
-            //var navPage = new NavigationPage(new ItemsPage()) { Title = "Home" };
-            //var mdp = new MasterDetailPage()
-            //{
-            //    Master = new MasterPage(),
-            //    Detail = navPage
-            //};
+            //CacheMemory.MyCache.Set("favorites", new List<Articles>());
+
             MainPage = new MasterPage();
-            //MainPage = new NavigationPage(new MainPage());
 
             RUTA_DB = ruta_db;
         }

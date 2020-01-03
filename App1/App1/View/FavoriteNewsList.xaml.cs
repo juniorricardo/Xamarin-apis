@@ -7,7 +7,9 @@ using System.Threading.Tasks;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 using AppDemo.Entities;
-using AppDemo.View;
+using Microsoft.Extensions.Caching.Memory;
+using Newtonsoft.Json;
+using System.Collections;
 
 namespace AppDemo.View
 {
@@ -18,5 +20,18 @@ namespace AppDemo.View
         {
             InitializeComponent();
         }
+
+        protected override void OnAppearing()
+        {
+            base.OnAppearing();
+            getFavorites();
+        }
+
+        public void getFavorites()
+        {
+            var favList = JsonConvert.DeserializeObject<List<Articles>>(CacheMemory.MyCache.Get("favorites").ToString());
+            this.favoritesList.ItemsSource = favList;
+        }
+
     }
 }

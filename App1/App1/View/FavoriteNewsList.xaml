@@ -6,17 +6,36 @@
              mc:Ignorable="d"
              x:Class="AppDemo.View.FavoriteNewsList">
     <ContentPage.Content>
-        <StackLayout>
-            <ListView x:Name="favNewsList" >
-                <ListView.ItemTemplate>
-                    <DataTemplate>
-                        <TextCell   Text="{Binding Nombre}"
-                                    Detail="{Binding Apellido}"
-                                    TextColor="#D9C5AD"
-                                    Height="100"/>
-                    </DataTemplate>
-                </ListView.ItemTemplate>
-            </ListView>
-        </StackLayout>
+
+        <ListView x:Name="favoritesList" 
+                  RowHeight="280">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <Grid x:Name="Cell"
+                              Margin="5,0,5,0"
+                              Padding="10,5,10,5">
+                            <Frame Padding="0,0,0,0"
+                                   CornerRadius="3">
+                                <StackLayout >
+                                    <Image Source="{Binding urlToImage}"
+                                           Aspect="AspectFill"
+                                           HorizontalOptions="Fill"
+                                           HeightRequest="150"/>
+                                    <StackLayout Margin="10,0,10,0">
+                                        <Label Text="{Binding title}"
+                                               FontAttributes="Bold"
+                                               FontSize="20"/>
+                                        <Label Text="{Binding description}"
+                                               FontSize="15"/>
+                                    </StackLayout>
+                                </StackLayout>
+                            </Frame>
+                        </Grid>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+
     </ContentPage.Content>
 </ContentPage>

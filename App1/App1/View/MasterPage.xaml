@@ -53,5 +53,10 @@
         <Tab>
             <ShellContent ContentTemplate="{DataTemplate pages:NewsViewPage}"/>
         </Tab>
+    </FlyoutItem><FlyoutItem Title="Noticias Favoritas" 
+                Icon="news.png">
+        <Tab>
+            <ShellContent ContentTemplate="{DataTemplate pages:FavoriteNewsList}"/>
+        </Tab>
     </FlyoutItem>
 </Shell>

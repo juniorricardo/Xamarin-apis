@@ -10,6 +10,8 @@ namespace AppDemo.Entities
     {
         private static readonly IMemoryCache myCache = new MemoryCache(new MemoryCacheOptions() { });
 
-        public static IMemoryCache MyCache { get { return myCache;  } }
+        public static IMemoryCache MyCache { get { return myCache; } }
+
+        
     }
 }

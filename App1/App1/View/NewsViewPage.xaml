@@ -10,8 +10,7 @@
     <ContentPage.Content>
 
         <ListView x:Name="listNewsView" 
-                  RowHeight="320"
-                  >
+                  RowHeight="320">
             <ListView.ItemTemplate>
                 <DataTemplate>
                     <ViewCell>
@@ -42,13 +41,17 @@
                                 <Button x:Name="btnAddFavorites" 
                                         Text="Like"
                                         Clicked="btnAddFavorites_Clicked"
-                                        CommandParameter="{Binding .}"/>
+                                        CommandParameter="{Binding .}"
+                                        IsEnabled="True"
+                                        Opacity="99"/>
+                                <Image Source="like"/>
                             </Grid>
                         </Grid>
                     </ViewCell>
                 </DataTemplate>
             </ListView.ItemTemplate>
         </ListView>
+        
     </ContentPage.Content>
 
 </ContentPage>
