@@ -39,12 +39,10 @@
                                   WidthRequest="40"
                                   Padding="0,0,10,10">
                                 <Button x:Name="btnAddFavorites" 
-                                        Text="Like"
                                         Clicked="btnAddFavorites_Clicked"
                                         CommandParameter="{Binding .}"
-                                        IsEnabled="True"
-                                        Opacity="99"/>
-                                <Image Source="like"/>
+                                        BackgroundColor="White"/>
+                                <Image Source="iconLike"/>
                             </Grid>
                         </Grid>
                     </ViewCell>
