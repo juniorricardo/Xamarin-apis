@@ -1,12 +1,9 @@
-﻿using NewsAPI;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Text;
 using AppDemo.Entities;
 using System.Threading.Tasks;
 using System.Diagnostics;
-using NewsAPI.Models;
-using NewsAPI.Constants;
 using Newtonsoft.Json;
 using System.Net;
 using System.Net.Http;

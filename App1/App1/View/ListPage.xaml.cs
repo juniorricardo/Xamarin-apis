@@ -22,17 +22,22 @@ namespace AppDemo.View
             contactosListView.ItemSelected += ContactosListView_ItemSelected;
         }
 
+
         protected override void OnAppearing()
         {
             base.OnAppearing();
-
+            cargarDatosUsuarios();
+        }
+        private void cargarDatosUsuarios()
+        {
+            ActInd.IsRunning = true;
             using (var conn = new SQLite.SQLiteConnection(App.RUTA_DB))
             {
                 conn.CreateTable<Contacto>();
                 listaContactos = conn.Table<Contacto>().ToList();
             }
             contactosListView.ItemsSource = listaContactos;
-
+            ActInd.IsRunning = false;
         }
 
         private void ContactosListView_ItemSelected(object sender, SelectedItemChangedEventArgs e)

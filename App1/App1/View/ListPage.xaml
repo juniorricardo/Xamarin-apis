@@ -10,8 +10,10 @@
         <ToolbarItem Text="Agregar" Clicked="ToolbarItem_Clicked" />
     </ContentPage.ToolbarItems>
     <ContentPage.Content>
+        
         <Grid BackgroundColor="{StaticResource colorPaleta2}"
               Padding="10">
+            <ActivityIndicator x:Name="ActInd" BackgroundColor="White" IsRunning="False"/>
             <ListView x:Name="contactosListView"
                       Margin="10">
                 <ListView.ItemTemplate>
